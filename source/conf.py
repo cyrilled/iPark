@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'iAccess'
-copyright = '2019, UFR IM2AG'
-author = 'UFR IM2AG'
+project = 'iPark'
+copyright = '2022, UFR IM2AG'
+author = 'Cyrille Desmoulins'
 master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
