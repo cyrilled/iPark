@@ -26,23 +26,14 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Il est rappelé qu'une présentation de ces matériels aura lieu à Berlin - Gate-IS.
 #. Un premier plan des parkings a été établi à partir des documents des architectes de l'Hôtel du département.
 #. La figure 1 montre le plan du parking public qui est en accès payant.
-
-    .. _CR003Fig1:
-
+    .. _CR002Fig1:
     .. figure:: media/hoteldept1.png
         :align: center
-
         Fig. 1 : Parking Hôtel du département - Niveau 1 - Accès public payant
-
 #. La figure 2 montre le plan des niveaux supérieurs, dont l'accès est dédié aux employés et élus du Département.
-
-    .. _CR003Fig1:
-
     .. figure:: media/hoteldept2.png
         :align: center
-
         Fig. 1 : Parking Hôtel du département - Niveau 2 - Accès employés
-
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
