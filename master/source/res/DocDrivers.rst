@@ -1,5 +1,5 @@
-Annexe - Documentation technique des bissas
-===========================================
+Annexe - Documentation technique
+================================
 
 :Type: Documentation technique
 :Organisateur: ABI
