@@ -69,7 +69,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 
         +------------+---------------------+--------+
         | Groupe     |  Période            | Parking|
-        +=============+====================+========+
+        +============+====================+=========+
         | Technique  | LMMJVSD 08:00-20:00 | N2,N3  |
         +------------+---------------------+--------+
         | RH centraux| LMMJVxx 9:00-18:00  | N2     |
@@ -89,6 +89,8 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Un élément important concerne les règles à appliquer en cas d'incendie dans un parking.
 #. Toutes les barrières doivent être ouvertes automatiquement.
 #. Il faut donc prendre en compte les systèmes à incendie et les interfacer avec iPark.
+
+#. La question de l'affichage du nombre de places disponibles par niveaux n'est été tranchée, rendre public cette donnée ne faisant pas l'unanimité.
 
 #. La conservation de l'historique des événements (accès et incident) étant nécessaire dans le contexte sécuritaire actuel, cette fonctionnalité doit être intégrée dans iPark.
 
