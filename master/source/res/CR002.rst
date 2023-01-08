@@ -36,12 +36,10 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 
 #. La figure 2 montre le plan des niveaux supérieurs, dont l'accès est dédié aux employés et élus du Département.
 
-    .. _CR003Fig1:
-
     .. figure:: media/hoteldept2.png
         :align: center
 
-        Fig. 1 : Parking Hôtel du département - Niveau 2 - Accès employés
+        Fig. 1 : Parking Hôtel du département - Niveau supérieurs - Accès employés
 
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
@@ -65,15 +63,14 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Une autorisation doit être un triplet (groupe, période, zones).
 #. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau 1 ci-dessous.
 
-    .. table:: Tab. 1 : Exemple ELL 07-12
-
         +------------+---------------------+--------+
         | Groupe     |  Période            | Parking|
-        +============+====================+=========+
+        +============+=====================+========+
         | Technique  | LMMJVSD 08:00-20:00 | N2,N3  |
         +------------+---------------------+--------+
         | RH centraux| LMMJVxx 9:00-18:00  | N2     |
         +------------+---------------------+--------+
+    .. table:: Tab. 1 : Exemple ELL 07-12
 
 #. Les autorisations sous forme de triplets pourraient aussi convenir a priori pour les autres parkings gérés par iPark.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
