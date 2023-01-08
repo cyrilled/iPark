@@ -27,8 +27,6 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Un premier plan des parkings a été établi à partir des documents des architectes de l'Hôtel du département.
 #. La figure 1 montre le plan du parking public qui est en accès payant.
 
-    .. _CR002Fig1:
-
     .. figure:: media/hoteldept1.png
         :align: center
 
