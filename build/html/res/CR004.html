@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CR004 Matériels de contrôle d’accès &#8212; Documentation iAccess 1.0</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="CR005 Architecture et contraintes techniques" href="CR005.html" />
+    <link rel="prev" title="CR003 Réunion iAcces pour Chimiotis" href="CR003.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="cr004-materiels-de-controle-d-acces">
+<h1>CR004 Matériels de contrôle d’accès<a class="headerlink" href="#cr004-materiels-de-controle-d-acces" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Date</dt>
+<dd class="field-odd"><p>03-15-07h-20h</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>Réunion</p>
+</dd>
+<dt class="field-odd">PartiesPrenantes</dt>
+<dd class="field-odd"><p>KWG, CMS, YBI, MPA, ZSH</p>
+</dd>
+<dt class="field-even">Lieu</dt>
+<dd class="field-even"><p>Berlin-Bissis</p>
+</dd>
+<dt class="field-odd">Organisateur</dt>
+<dd class="field-odd"><p>KWG</p>
+</dd>
+<dt class="field-even">Rapporteur</dt>
+<dd class="field-even"><p>KWG</p>
+</dd>
+<dt class="field-odd">Presents</dt>
+<dd class="field-odd"><p>KWG, CMS, YBI, MPA, ZSH</p>
+</dd>
+<dt class="field-even">Objectifs</dt>
+<dd class="field-even"><p>Architecture et discussions sur les fonctionnalités gardien</p>
+</dd>
+</dl>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Ce compte rendu est un <em>document de travail</em> et n’est pas contractuel.</p>
+</div>
+<dl class="simple">
+<dt>Nouvelles parties prenantes :</dt><dd><ul class="simple">
+<li><p>Clarissa Maris (CMS) - Bissis, Berlin</p></li>
+<li><p>Yohav El Benali (YBI) - Bissis, Berlin</p></li>
+</ul>
+</dd>
+</dl>
+<ol class="arabic">
+<li><p>La réunion a eu lieu dans les locaux de Bissis.</p></li>
+<li><p>Bissis est sur le point de commercialiser des sas de sécurité révolutionnaires.</p></li>
+<li><p>Ces systèmes physiques seront prochainement commercialisés sous le nom de <em>Bissas</em>.</p></li>
+<li><p>Bissis souhaite accélérer la mise sur le marché des bissas et souhaite donc intégrer le consortium pour
+participer à l’élaboration de iAccess.</p></li>
+<li><p>Il est entendu que Bissis fournira ces Bissas et pour chaque modèle un driver logiciel pour l’intégrer à iAccess</p></li>
+<li><p>Par contre un problème est vite apparu pendant la réunion.</p></li>
+<li><p>Il sera impossible de voir les bissas avant au moins deux mois, et cela pour des problèmes de confidentialité.</p></li>
+<li><p>Vu les très nombreuses innovations, de multiples brevets sont en court d’acquisition et ce procédé est long.</p></li>
+<li><p>La direction ne souhaite prendre aucun risque de fuites et même en interne seuls certains employés (e.g. YBI) ont une vision globale des bissas tel qu’ils seront présentés dans quelques mois.</p></li>
+<li><p>Après quelques échanges et discussions animées, il est apparu que ce ne devrait cependant pas être un problème pour iAccess.</p></li>
+<li><p>Bissis fournira des simulateurs pour que puissent commencer les tests lorsque nécessaires.</p></li>
+<li><p>Toutes les parties logicielles sur le serveur applicatif pourront être réalisées en amont grâce à la simulation des bissas et des caméras pilotées par les drivers à installer sur le serveur de contrôle.</p></li>
+<li><p>AccessIT, qui travaille depuis longtemps avec Bissis, est confiant dans cette démarche.</p></li>
+<li><p>L’utilisation d’une spécification UML a été soulignée comme un point essentiel dans ce contexte tendu.</p></li>
+<li><p>Il a été convenu que l’IM2AG fournirait rapidement des scénarios qui serviront à écrire les tests de la version pour le stade de Tokyo.</p></li>
+<li><p>Il s’agit non seulement de tester les scénarios de passage sans incident, mais aussi les scénarios générant des alarmes envoyées aux gardiens.</p></li>
+<li><p>En ce qui concerne les fonctionnalités des bissas, Bissis a proposé une illustration via l’étude d’un système proposé par un de ses concurrents.</p></li>
+<li><p>Les bissas ressembleront <em>par certains côtés</em> au système « Cilindro Bibussola » de <a class="reference external" href="http://www.archiexpo.com/prod/alluser-industrie/sliding-doors-commercial-buildings-security-automatic-52110-624140.html#product-item_142100">AllUserIndustrie</a>:</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="cr004fig1"></span><img alt="../_images/cilindroBibussola.jpg" src="../_images/cilindroBibussola.jpg" />
+<p class="caption"><span class="caption-text">Fig. 1 : <em>« CILINDRO BIBUSSOLA »</em> par <a class="reference external" href="http://www.archiexpo.com/prod/alluser-industrie/sliding-doors-commercial-buildings-security-automatic-52110-624140.html#product-item_142100">AllUserIndustrie</a> (cf <a class="reference download internal" download="" href="../_downloads/d0338ea60afdbd10ba2276206184984a/videoBibussola.mp4"><code class="xref download docutils literal notranslate"><span class="pre">VideoBibussola</span></code></a>)</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Le Bibussola n’est là qu’à titre d’illustration ; les bissas ont de nombreuses différences.</p></li>
+<li><p>Des groupes de 2 à 16 bissas peuvent être alignés par point d’accès.</p></li>
+<li><p>Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).</p></li>
+<li><p>Ceci permet des flux importants à un même point d’accès (jusqu’à 100 passages/mn).</p></li>
+<li><p>Les bissas sont symétriques</p></li>
+<li><p>Ils possèdent systématiquement des lecteurs sur les deux faces (contrairement aux Bibussolas).</p></li>
+<li><p>Ils peuvent ainsi contrôler à la fois l’entrée et la sortie.</p></li>
+<li><p>Ce qui permet à tout moment être capable de savoir qui est dans une zone.</p></li>
+<li><p>Cette fonction est nécessaire entre autres pour ne pas dépasser le nombre maximum de personnes autorisées par zone.</p></li>
+<li><p>Si une zone est pleine, une alerte devra être générée pour qu’un affichage le signale et que les gardiens soient prévenus de venir expliquer la situation.</p></li>
+<li><p>Les lecteurs des bissas sont polyvalents et permettent plusieurs types d’identification.</p></li>
+<li><p>Ils lisent différents types de badges papier, par exemple des QR codes.</p></li>
+<li><p>Ils peuvent lire également des cartes classiques ou sans contact (jusqu’à 1m).</p></li>
+<li><p>Quel que soit le type de badge, les informations envoyées par le driver du bissas au serveur de contrôle sont toujours identiques.</p></li>
+<li><p>La première information est le numéro du point d’accès dans le site.</p></li>
+<li><p>La seconde information est le numéro du bissas dans ce point d’accès</p></li>
+<li><p>La troisième information est la face sur laquelle le badge a été lu (A ou B).</p></li>
+<li><p>La dernière information est le « bCode » (code badge) lu par le lecteur de badge.</p></li>
+<li><p>Les lecteurs sont équipés de deux leds (une rouge et verte).</p></li>
+<li><p>Deux détecteurs de chaque côté permettent au bissas de signaler lorsqu’une porte arrive en position ouverte ou en position fermée.</p></li>
+<li><p>Tout comme le Cilindro Bibussola, les bissas possèdent un détecteur de présence à l’intérieur du sas.</p></li>
+<li><dl>
+<dt>A chaque fois qu’une porte est refermée, il détecte l’absence ou la présence d’une personne et si du métal est présent en retournant Void, OK ou M.</dt><dd><div class="figure align-center" id="id2">
+<span id="cr004fig2"></span><img alt="../_images/tailgaiting.jpg" src="../_images/tailgaiting.jpg" />
+<p class="caption"><span class="caption-text">Fig. 2 : Incident de « piggybacking (cf <a class="reference download internal" download="" href="../_downloads/d0338ea60afdbd10ba2276206184984a/videoBibussola.mp4"><code class="xref download docutils literal notranslate"><span class="pre">VideoBibussola</span></code></a> seconde 52)</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>En fait les bissas sont entièrement contrôlés par le driver fourni par Bissis.</p></li>
+<li><p>Ces drivers seront installés sur le serveur de contrôle.</p></li>
+<li><p>Chaque bissas sera connecté au panneau de brassage du serveur de contrôle par une connexion RFC 821</p></li>
+<li><p>Bissis propose deux types de bissas, les bissas Astra et les bissas Xtra.</p></li>
+<li><p>Les bissas Astra sont destinés à recevoir un public important.</p></li>
+<li><p>C’est pour cela que AccessIT préconise leur utilisation au stade de Tokyo.</p></li>
+<li><p>Les bisas Xtra sont écartés car leur débit est insuffisant.</p></li>
+<li><p>Les bissas Astra permettent entre autres d’organiser des files d’attentes uniques par point d’accès.</p></li>
+<li><p>Ils sont munis d’un feu visible depuis la file indiquant l’état du bissas
+(disponible = vert, rouge = utilisé, orange = bientôt libre).</p></li>
+<li><p>Ce feu tricolore permet de montrer le prochain bissas Astra disponible (voyant orange).</p></li>
+<li><p>Pour cela, un détecteur de présence à l’intérieur fait passer le feu à l’orange lorsqu’un badgeur est entré dans le bissas et que la seconde porte s’ouvre.</p></li>
+<li><p>En fait, contrairement aux autres fonctionnalités, le contrôle des feux tricolores est intégré au bissas ASTRA et ne doit pas être commandés par le driver de Bissas depuis le serveur de contrôle.</p></li>
+<li><p>Pour le stade de Tokyo, on souhaite aussi détecter le piggypacking, c’est à dire quand plus d’une personne entre dans le bissas.</p></li>
+<li><p>Dans ce cas, la porte sera refermée et une alarme envoyée aux gardiens qui devront intervenir pour débloquer le bissas.</p></li>
+<li><p>AccessIT insiste de nouveau sur le fait que différents scénarios devront donner lieu à des incidents envoyés aux gardiens.</p></li>
+<li><p>C’est le cas par exemple si un badgeur ne sort pas du sas au bout de 8 secondes.</p></li>
+<li><p>C’est également le cas si quelqu’un bloque une porte (avec un pied ou autre).</p></li>
+<li><p>Bissis propose aussi des bissas haute sécurité, les bissas Xtra.</p></li>
+<li><p>Ces bissas sont préconisés par AccessIT pour l’usine de Morrocoy.</p></li>
+<li><p>Ils permettent d’être sûr (à 98%) que le badgeur est bien la personne associée au badge.</p></li>
+<li><p>La personne ne peut en effet sortir du sas qu’après avoir effectué une identification physique.</p></li>
+<li><p>Cette identification physique se fait à l’intérieur du sas, après l’identification badge à l’entrée.</p></li>
+<li><p>L’identification physique est une empreinte digitale</p></li>
+<li><p>Si la personne n’est pas autorisée un incident système sera généré par le bissas Xtra.</p></li>
+<li><p>Il en sera de même si le détecteur de métaux intégré dans les Xtra se déclenche.</p></li>
+<li><p>Le badgeur sera alors bloqué dans le sas et devra attendre qu’un gardien vienne le débloquer.</p></li>
+<li><p>Une fois de plus Bissis propose le matériel pour permettre cela, mais les fonctions devront être réalisées sur le serveur de contrôle en fonction des informations émises par les bissas.</p></li>
+<li><p>Evidemment les digitCodes transmis par le lecteur d’empreinte digitale devront être comparés aux données disponibles sur le serveur applicatif.</p></li>
+<li><p>Dans iAccess ce sont les administrateurs de groupes qui seront chargés, en plus de la délivrance des badges selon la procédure normale, de collecter les empreintes digitales des badgeurs.</p></li>
+<li><p>L’identification physique des badgeurs dans un Xtra devra se faire en moins de 5 secondes.</p></li>
+<li><p>L’identification des badges et surtout le calcul des autorisations lors d’un passage de badge devra toujours pouvoir être faite en moins de 2 secondes.</p></li>
+<li><p>Sachant que l’on envisage plus de 200 entrées ou sorties simultanément un soin tout particulier devra être apporté à cet aspect.</p></li>
+<li><p>Bissis propose également d’autres éléments matériels pour la sécurité.</p></li>
+<li><p>Des caméras directionnelles C800 pourront être installées comme option d’iAccess.</p></li>
+<li><p>Les gardiens devront pouvoir à tout moment les réorienter à distance.</p></li>
+<li><p>Les plans de sécurité proposés par AccessIT pour Morrocoy et Tokyo sont déjà basés sur l’utilisation de ce matériel.</p></li>
+<li><p>Cependant pour des raisons de délai, les caméras ne seront pas connectées à iAccess pour la première version du logiciel</p></li>
+<li><p>Les bissas doivent être reliés au serveur de contrôle du site via des liaisons « RFC 321 »; les caméras via des liaisons « RFC 821 ».</p></li>
+<li><p>Le matériel et les protocoles associés sont en cours d’être brevetés par Bissis.</p></li>
+<li><p>Il doit y avoir une salle de contrôle par site ; elle contient le serveur de contrôle.</p></li>
+<li><p>Il s’agit d’un matériel spécialisé quasi temps réel auquel de multiples câbles sont connectés sur un panneau de brassage (jusqu’à des centaines sur certains sites).</p></li>
+<li><p>Ce serveur de contrôle devra être connecté au serveur applicatif via une liaison TCP/IP sécurisée.</p></li>
+<li><p>Seuls les gardiens doivent avoir accès à la salle de contrôle.</p></li>
+<li><p>En conclusion de cette réunion (longue), il apparaît clairement que les technologies innovantes proposées par Bissis en font un partenaire idéal.</p></li>
+<li><p>De plus, le matériel n’étant pas disponible à ce jour, il est essentiel de préparer les scénarios à prendre en compte et de les spécifier de manière rigoureuse.</p></li>
+<li><p>Bissis fournira des simulateurs matériels pilotables par le driver fourni.</p></li>
+<li><p>Dans un premier temps des tests seront ainsi effectués à partir des scénarios fournis par IM2AG.</p></li>
+<li><p>Une réunion est prévue (03-18) pour discuter des points non abordés jusque-là et notamment de l’architecture de déploiement.</p></li>
+</ol>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">iAccess</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="CR001.html">CR001 Réunion de lancement de iAccess</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR002.html">CR002 Réunion iAcces pour le stade Kasumigaoka de Tokyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR003.html">CR003 Réunion iAcces pour Chimiotis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CR004 Matériels de contrôle d’accès</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR005.html">CR005 Architecture et contraintes techniques</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="CR003.html" title="Chapitre précédent">CR003 Réunion iAcces pour Chimiotis</a></li>
+      <li>Next: <a href="CR005.html" title="Chapitre suivant">CR005 Architecture et contraintes techniques</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, UFR IM2AG.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/res/CR004.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

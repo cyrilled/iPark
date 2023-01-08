@@ -1,0 +1,103 @@
+CR003 Matériels de contrôle d'accès 
+===================================
+
+:Date: 03-15-07h-20h
+:Type: Réunion
+:PartiesPrenantes: KWG, CMS, YBI, MPA, ZSH
+:Lieu: Berlin chez Z-Park
+:Organisateur: KWG
+:Rapporteur: KWG
+:Presents: KWG, CMS, YBI, MPA, ZSH
+:Objectifs: Architecture et discussions sur les fonctionnalités gardien
+
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+Nouvelles parties prenantes :
+ - Clarissa Maris (CMS) - Z-Park, Berlin
+ - Yohav El Benali (YBI) - Z-Park, Berlin
+
+#. La réunion a eu lieu dans les locaux de Z-Park.
+#. Z-Park développe et commercialise du matériel de contrôle d'accès de parkings à la pointe de l'innovation technologique
+#. Z-Park voudrait développer son marché à l'international et souhaite donc intégrer le consortium pour participer à l'élaboration de iPark.
+#. Il est entendu que Z-Park fournira ces matériels et pour chaque modèle un driver logiciel pour l'intégrer à iPark.
+#. Par contre un problème est vite apparu pendant la réunion.
+#. Des dépôts de brevet sont en cours pour plusieurs matériels très innovants et il sera impossible de les utiliser pour les tests avant au moins deux mois, et cela pour des problèmes de confidentialité.
+#. La direction ne souhaite prendre aucun risque de fuites et même en interne seuls certains employés (e.g. YBI) ont une connaissance précise de ces matériels tel qu'ils seront vendus une fois les brevets déposés dans quelques mois.
+#. Après quelques échanges et discussions animées, il est apparu que ce ne devrait cependant pas être un problème pour iPark.
+#. Z-Park fournira des simulateurs pour que les tests puissent commencer dès maintenant.
+#. Toutes les parties logicielles sur le serveur applicatif pourront être réalisées en amont grâce à la simulation de ces matériels pilotées par les drivers à installer sur le serveur de contrôle.
+#. AccessIT, qui travaille depuis longtemps avec Z-Park, est confiant dans cette démarche.
+
+#. L'API des drivers de matériel est fournie dès maintenant par Z-Park (en annexe de ce compte-rendu)
+
+#. L'utilisation d'une spécification UML a été soulignée comme un point essentiel dans ce contexte tendu.
+
+#. Il a été convenu que MIAGE Grenoble fournira rapidement des scénarios qui serviront à écrire les tests de la version pour l'Hôtel du Département de l'Isère.
+#. Il s'agit bien entendu de tester tous les scénarios de passage : sans incident ou avec incident générant des alarmes envoyées aux gardiens.
+
+#. Les matériels principaux fournis par Z-Park sont des barrières, des bornes à tickets, des automates de paiement, des capteurs de passage, des caméra de surveillance et des lecteurs de plaque minéralogique
+#. Un exemple de fonctionnement basique est montré sur |ce lien|
+
+#. Les barrières levantes peuvent avoir des lisses de différentes formes et tailles mais sont toutes contrôlables par le même driver.
+#. Les bornes à tickets ressembleront *par certains aspects* à la borne "ZEAG-LE" de HubParking présenté dans la figure 1 ci-dessous
+
+    .. _CR004Fig1:
+
+    .. figure:: media/zg-le.jpg
+        :align: center
+
+        Fig. 1 : *"borne ZEAG-LE"* par _HubParking
+
+#. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
+#. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
+#. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement à bande magnétique ou code-barres
+#. Les tickets sont émis en touchant un bouton d'émission de ticket.
+#. La borne fournit également une vérification de cartes d'accès.
+#. Cette fonction est nécessaire pour les parties de parking à accès privé ou sur abonnement.
+#. Les lecteurs des des bornes sont polyvalents et permettent plusieurs types d'identification.
+#. Ils sont compatibles des cartes classiques ou sans contact (jusqu'à 5m).
+#. Les bornes possèdent un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
+#. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens
+
+#. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
+#. Ils permettent non seulement de comptabiliser les véhicules présents dans une zone, mais aussi, couplés avec une seconde barrière aval, d'éviter le piggypacking en sortie de zone payante
+
+#. Les caméra de surveillance et les lecteurs de plaque minéralogique sont connectés de la même façon que les capteurs de passage. 
+
+#. En fait tous les matériels sont entièrement contrôlés par les drivers fournis par Z-Park (API fournie en annexe).
+#. Ces drivers seront installés sur le serveur de contrôle.
+#. Chaque matériel est connecté au panneau de brassage du serveur de contrôle par une connexion RFC 813
+#. Une fois de plus Z-Park propose le matériel pour gérer les accès, mais leurs fonctions devront être commandées depuis le serveur de contrôle via les drivers fournis.
+
+#. Les automates de paiement permettent de régler avant de sortir le prix du parking en fonction de la durée de stationnement. L'utilisateur introduit son ticket, règle le montant par carte bancaire et obtient en retour un ticket de sortie. L'automate gère directement le paiement en se connectant par 4G au système bancaire du gestionnaire du parking.
+
+#. Pour iPark, l'identification des cartes et badges et surtout la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 5 secondes.
+#. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de points avec plus de 200 entrées ou sorties par heure un soin tout particulier devra être apporté à cet aspect.
+
+#. Tous les matériels doivent être reliés au serveur de contrôle du site via des câbles RJ12 et utiliser le protocole "RFC 873"
+#. Le serveur de contrôle doit être installé dans une salle sécurisée proche des matériels d'accès du site.
+#. Il s'agit d'un matériel spécialisé quasi temps réel auquel les bissas sont connectés chacun par un câble sur un panneau de brassage (jusqu'à des centaines sur certains sites).
+#. Ce serveur de contrôle devra être connecté au serveur applicatif via une liaison TCP/IP sécurisée.
+
+#. En conclusion de cette (longue) réunion, il apparaît clairement que les technologies innovantes proposées par Z-Park en font un partenaire idéal.
+#. De plus, certains matériels n'étant pas disponibles à ce jour, il est essentiel de préparer les scénarios à prendre en compte et de les spécifier de manière rigoureuse.
+#. Z-Park fournira des simulateurs matériels pilotables par les driver fournis.
+#. Dans un premier temps des tests seront ainsi effectués à partir des scénarios fournis par MIAGE Grenoble.
+#. Une réunion est prévue (03-18) pour discuter des points non abordés jusque-là et notamment de l'architecture de déploiement.
+
+
+.. ............................................................................
+
+.. _HubParking:
+    https://www.hubparking.fr/
+
+.. |ce lien| replaces::
+    https://drive.google.com/file/d/1jvTm92rrcoI-heeFVwHlMFZ9JT8szxKm/view
+
+.. |video>Exemple| replace::
+
+    :download:`VideoParkingPayant <./media/Parking payant.mpg>`
+
+
+.. _`QR codes`: http://en.wikipedia.org/wiki/QR_code

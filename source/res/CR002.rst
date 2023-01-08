@@ -1,0 +1,102 @@
+CR002 Réunion iPark pour l'Hôtel du Département de l'Isère
+==========================================================
+
+:Date: 02-17 15h-23h
+:Type: Réunion
+:Lieu: Grenoble - Park Hôtel
+:PartiesPrenantes: ABI, JDR, PSO, AGO
+:Organisateur: ABI
+:Rapporteur: KWG
+:Presents: ABI, JDR, PSO, AGO,
+:Objectifs: Hôtel du département de l'Isère
+
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+
+Nouvel intervenant, directeur des services généraux de l'Hôtel du département :
+ - Eliezer LAEMMEL (ELL) - Grenoble, Département de l'Isère
+
+#. Grâce aux contacts d'AGO, une rencontre sur le projet l'Hôtel du département de l'Isère a été organisée opportunément.
+#. Le Département de l'Isère désire s’équiper d'un nouveau système de contrôle d'accès de son parking.
+#. Ce parking doit être rénové en même temps que le bâtiment.
+#. Il comprend à la fois des parties accessibles au personnel et d'autres au public en accès payant.
+#. Il s'agit donc d'un prospect chaud pour iPark.
+#. Les différents matériels ont été choisis pour répondre aux fonctions attendues.
+#. Il est rappelé qu'une présentation de ces matériels aura lieu à Berlin - Gate-IS.
+#. Un premier plan des parkings a été établi à partir des documents des architectes de l'Hôtel du département.
+#. La figure 1 montre le plan du parking public qui est en accès payant.
+
+    .. _CR003Fig1:
+
+    .. figure:: media/hoteldept1.png
+        :align: center
+
+        Fig. 1 : Parking Hôtel du département - Niveau 1 - Accès public payant
+
+#. La figure 2 montre le plan des niveaux supérieurs, dont l'accès est dédié aux employés et élus du Département.
+
+    .. _CR003Fig1:
+
+    .. figure:: media/hoteldept2.png
+        :align: center
+
+        Fig. 1 : Parking Hôtel du département - Niveau 2 - Accès employés
+
+#. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
+#. Ces groupes de personnes doivent pouvoir être définis dans iPark.
+#. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
+#. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
+*. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
+#. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
+#. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
+#. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
+#. Par exemple l'administrateur des personnels d'une Maison du Département peut gérer les personnes de cette Maison et définir les niveaux auxquelles elles ont accès et à quels moments. 
+#. Un autre administrateur s'occupe des personnels techniques de l'Hôtel du Département, etc.
+#. Bien entendu les administrateurs de groupe ne pourront pas donner à un groupe l'accès à des niveaux dont il n'est pas chargé.
+#. Le nombre de badgeurs par groupe va de 1 à 300 environ.
+
+#. Les autorisations d'un groupe définissent les niveaux auxquels ses membres ont accès et à quelles périodes.
+#. Par exemple les élus ont besoin d'accès jusque tard dans la soirée et ont accès au parking du niveau 6.
+#. Les personnels administratifs de séance ont eux aussi besoin d'un accès tardif et ont accès au parking du niveau 5.
+#. Les personnels des RH centraux n'ont accès qu'aux horaires de bureau au parking du niveau 2.
+#. On pourra imaginer d'utiliser dans le futur des périodes d'accès standardisés pour les ré-utiliser avec plusieurs groupes.
+#. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes parking (cf. CR003Fig2_).
+#. Une autorisation doit être un triplet (groupe, période, zones).
+#. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau 1 ci-dessous.
+
+    .. table:: Tab. 1 : Exemple ELL 07-12
+
+        +------------+---------------------+--------+
+        | Groupe     |  Période            | Parking|
+        +=============+====================+========+
+        | Technique  | LMMJVSD 08:00-20:00 | N2,N3  |
+        +------------+---------------------+--------+
+        | RH centraux| LMMJVxx 9:00-18:00  | N2     |
+        +------------+---------------------+--------+
+
+#. Les autorisations sous forme de triplets pourraient aussi convenir a priori pour les autres parkings gérés par iPark.
+#. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
+
+#. Des gardiens sont chargé de gérer les incidents à l'entrée ou à la sortie d'un niveau.
+#. Ils peuvent depuis leur smartphone débloquer l'entrée ou la sortie d’une personne bloquée suite à un incident.
+#. Si un véhicule n'est pas autorisée à sortir un incident est envoyé par iPark aux gardiens du parking.
+#. Le véhicule est alors bloqué dans niveau et doit attendre qu'un gardien le débloque.
+#. L'appli iPark du smartphone du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
+#. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
+
+
+#. Un élément important concerne les règles à appliquer en cas d'incendie dans un parking.
+#. Toutes les barrières doivent être ouvertes automatiquement.
+#. Il faut donc prendre en compte les systèmes à incendie et les interfacer avec iPark.
+
+#. La conservation de l'historique des événements (accès et incident) étant nécessaire dans le contexte sécuritaire actuel, cette fonctionnalité doit être intégrée dans iPark.
+
+#. Un web service permettra à des systèmes externes (e.g. systèmes RH / de contrôle de présence) d'importer les événements d'accès de iPark (horaire d'entrée et sortie pour chaque niveau).
+#. Ce web service devra être sécurisé pour des aspects de confidentialité.
+
+#. En conclusion, la réunion sur rencontre sur le projet l'Hôtel du département de l'Isère a été très instructive.
+#. Il correspond bien aux fonctionnalités de base d'iPark.
+#. AccesIT confirme son intérêt de développer une version d'iPark pour ce parking.
+#. Cette version sera la première développée et sa conception sera faite au plus vite par MIAGE Grenoble.
+#. La prochaine réunion se fera à Berlin dans les locaux de Z-Park.

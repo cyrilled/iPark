@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CR005 Architecture et contraintes techniques &#8212; Documentation iAccess 1.0</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="CR004 Matériels de contrôle d’accès" href="CR004.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="cr005-architecture-et-contraintes-techniques">
+<h1>CR005 Architecture et contraintes techniques<a class="headerlink" href="#cr005-architecture-et-contraintes-techniques" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Date</dt>
+<dd class="field-odd"><p>03-18 12h-17h</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>Réunion</p>
+</dd>
+<dt class="field-odd">PartiesPrenantes</dt>
+<dd class="field-odd"><p>ABI, HSI, KWG, MPA, PSO</p>
+</dd>
+<dt class="field-even">Lieu</dt>
+<dd class="field-even"><p>Paris-AccessIT</p>
+</dd>
+<dt class="field-odd">Organisateur</dt>
+<dd class="field-odd"><p>ABI</p>
+</dd>
+<dt class="field-even">Rapporteur</dt>
+<dd class="field-even"><p>KWG</p>
+</dd>
+<dt class="field-odd">Presents</dt>
+<dd class="field-odd"><p>ABI, HSI, KWG, MPA</p>
+</dd>
+<dt class="field-even">Objectifs</dt>
+<dd class="field-even"><p>Définir l’architecture et revenir sur les fonctions associées à chaque noeud.</p>
+</dd>
+</dl>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Ce compte rendu est un <em>document de travail</em> et n’est pas contractuel.</p>
+</div>
+<ol class="arabic">
+<li><p>AccessIT rappelle l’architecture classique des applications déjà mises en place par leur soin.</p></li>
+<li><p>Il n’y a aucune raison a priori de changer d’architecture sachant qu’elle fonctionne bien dans différents contextes.</p></li>
+<li><p>Les matériels sécurité (bissas, caméras, etc.) sont toujours connectés directement au serveur de contrôle.</p></li>
+<li><p>Ce serveur permet de gérer en temps réel les matériels en les commandant par leur driver</p></li>
+<li><p>Le serveur d’applications doit être plus ou moins puissant selon le volume de données à gérer et le nombre de transactions à mettre en œuvre.</p></li>
+<li><p>Pour les sites de Tokyo ou de Morrocoy, il n’y aura a priori pas de soucis, mais AccessIT a déjà eu affaire à des sites avec plus de 800 points d’accès, 80 000 badgeurs, avec des historiques à conserver sur 5 ans (base militaire en Sibérie).</p></li>
+<li><p>De tels clients devront pouvoir être gérés avec iAccess.</p></li>
+<li><p>Contrairement aux architectures traditionnelles, il n’y aura pas de poste fixe pour les gardiens.</p></li>
+<li><p>Les gardiens seront équipés de smartphones XL (5.5 » au minimum), sous Android ou iOS, pour gérer les incidents.</p></li>
+<li><p>C’est un grand changement car jusque-là des appareils spécialisés ou des postes fixes étaient utilisés.</p></li>
+<li><p>Les applis des smartphones des gardiens seront connectées au serveur applicatif via une connexion sécurisée https et un réseau wifi interne sécurisé.</p></li>
+<li><p>AccessIT mentionne qu’il est possible d’installer des systèmes de brouillage et bien d’autres choses, qui rendent ce réseau à la fois sûr et fiable.</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="cr005fig2"></span><img alt="../_images/samsung.jpg" src="../_images/samsung.jpg" />
+<p class="caption"><span class="caption-text">Fig. 1 : Smartphones des gardiens</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Les incidents doivent être localisés (e.g. bissas, point d’accès et/ou zone) et gardés dans l’historique.</p></li>
+<li><p>Lorsqu’un gardien prend un incident, celui change d’état (« nouveau »-&gt; »affecté »).</p></li>
+<li><p>En fonction des cas, et la plupart du temps après s’être rendu sur place, le gardien peut agir sur l’incident pour l’ignorer ou le régler.</p></li>
+<li><p>Un incident ignoré ou réglé est considéré comme fermé mais peut encore être commenté, en lui associant du texte, des photos ou de l’audio/vidéo.</p></li>
+<li><p>Le règlement d’un incident dépend des cas.</p></li>
+<li><p>En cas d’incident d’accès, le gardien peut fermer ou ouvrir une des portes du bissas (ou les deux) depuis sa tablette.</p></li>
+<li><p>En cas d’incident d’incendie, le gardien peut déverrouiller un ou plusieurs bissas dans le sens de la sortie.</p></li>
+<li><p>Quand le bissas est déverrouillé, la simple détection d’une personne devant le bissas l’ouvre le bissas et il est refermé une fois qu’elle est passée.</p></li>
+<li><p>En situation de crise, le temps de réaction des gardiens peut devenir essentiel.</p></li>
+<li><p>Pour améliorer la rapidité d’intervention des gardiens, iAccess fournira dans une seconde version un paramétrage avec des types d’incidents prédéfinis.</p></li>
+<li><p>C’est le rôle des superviseurs de les définir et cela se fait généralement lors de la définition du plan sécurité initial en fonction des caractéristiques du site.</p></li>
+<li><p>Assez souvent on découvre par la suite de nouveaux types liés à des situations répétitives (e.g. « tuyau percé » dans une usine, « malaise dans un bissas » dans un hôpital, « cartable coincé dans un bissas » dans une école, etc.).</p></li>
+<li><p>Les gardiens peuvent alors sélectionner les types d’incidents correspondant à la situation.</p></li>
+<li><p>Evidemment si nécessaire les gardiens peuvent utiliser la fonction téléphone de leur smartphone pour appeler les services compétents (urgences, police, armée, etc.)</p></li>
+<li><p>La discussion sur le rôle des gardiens s’est achevée sur la conclusion suivante.</p></li>
+<li><p>L’IHM des gardiens doit être particulièrement ergonomique vu le contexte d’utilisation à la fois quotidien et potentiellement intensif.</p></li>
+<li><p>_</p></li>
+<li><p>En ce qui concerne le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes administrateurs (autant que nécessaire), ceux-ci seront également connectés au serveur applicatif par une liaison Ethernet, avec un client lourd utilisant le protocole https.</p></li>
+<li><p>Il s’agit dans les deux cas de PCs sous Debian.</p></li>
+<li><p>_</p></li>
+<li><p>Les administrateurs gèrent non seulement les inscriptions des badgeurs, mais aussi les problèmes liés à la perte d’un badge.</p></li>
+<li><p>Lorsqu’un badge est perdu, volé (y compris via agression), le badgeur est tenu d’en informer immédiatement le centre de sécurité.</p></li>
+<li><p>Cela ne concerne pas les tickets avec des badges papier, qui sont gérés directement par la société qui les vend.</p></li>
+<li><p>Quel que soit le type de badge, un badge est toujours associé à une seule personne à la fois et une personne ne peut posséder qu’un badge (pour un site) à un moment donné.</p></li>
+<li><p>Les badgeurs sont connus au minimum par leur nom et leur prénom et un numéro d’identité national (NIN).</p></li>
+<li><p>Le NIN utilisé dépend des personnes et des pays considérés.</p></li>
+<li><p>Ce peut être le numéro de passeport, le numéro de carte d’identité ou tout autre document selon le pays.</p></li>
+<li><p>Un mail et deux numéros de téléphone peuvent également être renseignés lors de l’enregistrement.</p></li>
+<li><p>A chaque fois qu’un badge est donné à quelqu’un, qu’il est annulé suite à une perte ou un vol, l’opération doit être enregistrée dans l’historique.</p></li>
+<li><p>Toutes ces opérations sont effectuées par les administrateurs de groupes.</p></li>
+<li><p>Lorsqu’un badgeur appartient à plusieurs groupes, et si ces groupes sont gérés par différents administrateurs, n’importe quel de ces administrateurs peut gérer la perte du badge.</p></li>
+<li><p>Finalement, le serveur applicatif est le seul élément de iAccess a être connecté à internet via tcp-ip.</p></li>
+<li><p>C’est lui qui gèrera les web-services mentionnés auparavant.</p></li>
+<li><p>_</p></li>
+<li><p>Il est fait état d’un démarrage éminent de la phase de collecte des exigences.</p></li>
+<li><p>Les spécifications UML seront faites par le groupe M1 MIAGE au sein de l’IM2AG à partir des comptes rendus de réunions réalisés jusque-là.</p></li>
+<li><p>Les personnels de la société AccessIT ne seront pas disponibles dans les semaines qui viennent.</p></li>
+<li><p>Il risque d’en être de même des membres IM2AG ayant participé à ces réunions, un voyage en Russie puis en Irlande étant prévu pour le prochain mois.</p></li>
+</ol>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">iAccess</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="CR001.html">CR001 Réunion de lancement de iAccess</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR002.html">CR002 Réunion iAcces pour le stade Kasumigaoka de Tokyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR003.html">CR003 Réunion iAcces pour Chimiotis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CR004.html">CR004 Matériels de contrôle d’accès</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CR005 Architecture et contraintes techniques</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="CR004.html" title="Chapitre précédent">CR004 Matériels de contrôle d’accès</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, UFR IM2AG.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/res/CR005.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

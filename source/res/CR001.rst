@@ -1,0 +1,57 @@
+CR001 Réunion de lancement de iPark
+===================================
+
+:Date: 02-01 08h-10h
+:Type: Réunion
+:Lieu: Grenoble-AccessIT
+:Parties prenantes: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
+:Organisateur: ABI
+:Rapporteur: KWG
+:Présents: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
+:Objectifs: Présentation des parties prenantes, grands objectifs
+
+..  attention::
+
+    Ce compte rendu est un document de travail et n'est pas contractuel.
+
+En ce début de projet, les parties prenantes sont les suivantes :
+ - Ahmed BLASI (ABI) – MIAGE, Grenoble
+ - Jean-Claude DUFOUR (JDR) - AccessIT, Grenoble
+ - Ken WONG (KWG) – MIAGE, Grenoble
+ - Mireille PALMA (MPA) – AccessIT, Lisbonne
+ - Paolo SANTIAGO SANCHEZ (PSO) – AccessIT, Caracas
+ - Hong SHI (HSI) – AccessIT, Zurich
+ - Tararya NARAMANATA (TNA) – AccessIT, Nantes
+ - Zork SWISH (ZSH) – AccessIT, Autriche
+ - Cassandra COHEN (CCN) - MIAGE, Grenoble
+
+#. Le présent projet a été baptisé iPark.
+#. La demande en systèmes intégrés de contrôle d'accès de parking se développent pour faire face aux nouvelles contraintes liées au réchauffement climatique.
+#. Les nouveaux bâtiments des entreprises doivent maintenant intégrer des parkings dont l'accès est restreint suivant les personnels et les horaires et les partager avec des usager privés payant
+#. La multiplication des zones piétonnes qui limitent l'accès des véhicules en ville nécessite de nouveau parking à l'orée des viles.
+#. Rares sont les systèmes actuels qui utilisent les technologies mobiles tant pour les usagers que pour les personnels.
+#. Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme AccessIT.
+#. La société AccessIT est spécialisée dans les systèmes de contrôle d’accès.
+#. AccessIT ne produit pas les équipements de contrôle d’accès, mais les assemble et les installe.
+#. Les logiciels contrôlant ces équipements sont développés par AccessIT à la demande pour chaque site.
+#. L'équipe informatique de AccessIT est assez limitée actuellement. 
+#. Avec l'augmentation de la demande, AccessIT doit faire appel à des prestataires extérieurs pour répondre à ses clients.
+#. La conception de certaines versions de iPark sera donc confiée à MIAGE Grenoble.
+#. Un certain nombre de contraintes techniques ont été déjà mentionnées : les développements backend devront se faire avec Java JDBC/JEE sur le framework STRUTS et le SGBD ORACLE.
+#. Le choix de Java/STRUTS est lié au fait que AccessIT utilise déjà ces technologies en interne.
+#. Pour le matériel d'accès, AccessIT a passé un accord avec Gate-IS.
+#. Gate-IS est un constructeur proposant du matériel à la pointe de l'innovation : barrières, capteurs. bornes, potelets, automates de paiement, ...
+#. Gate-IS sera donc partie prenante pour le projet et fournira les matériels, avec leurs drivers.
+#. Une prochaine réunion aura lieu dans les locaux de Gate-IS à Berlin pour étudier les matériels.
+#. Différentes organisations ont déjà contacté AccessIT pour la mise en place de iPark.
+#. Le département de l'Isère désire refaire le parking (privé et public) de l'Hôtel du département à l'occasion de sa rénovation énergétique.
+#. AccessIT a aussi été contactée par Ryokan, une entreprise qui gère des cliniques privées.
+#. Plusieurs villes indiennes voudraient également migrer vers iPark en 2024.
+#. Les commerciaux de AccessIT prévoient une augmentation exponentielle des demandes au prochain trimestre.
+#. Chaque version de ipark sera conçue et développée de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
+#. AccessIT a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
+#. Plus particulièrement un accord a été passé avec Docaposte/Softeam (Paris) pour des licences Modelio.
+#. AccessIT utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
+#. La prochaine réunion aura lieu avec le Département de l'Isère au Park Hôtel de Grenoble vu que l'Hôtel du département n'est plus accessible.
+#. En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si toutes les parties prenantes parviennent à participer et à mettre en œuvre leur savoir-faire.
+#. Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées par le contexte du réchauffement climatique.

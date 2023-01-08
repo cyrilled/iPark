@@ -1,0 +1,56 @@
+CR001 Réunion de lancement de iAccess
+=====================================
+
+:Date: 02-01 08h-10h
+:Type: Réunion
+:Lieu: Grenoble-AccessIT
+:Parties prenantes: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
+:Organisateur: ABI
+:Rapporteur: KWG
+:Présents: ABI, JDR, KWG, MPA, PSO, TNA, ZSH
+:Objectifs: Présentation des parties prenantes, grands objectifs
+
+..  attention::
+
+    Ce compte rendu est un document de travail et n'est pas contractuel.
+
+En ce début de projet, les parties prenantes sont les suivantes :
+ - Ahmed BLASI (ABI) – IM2AG, Grenoble
+ - Jean-Claude DUFOUR (JDR) - AccessIT, Grenoble
+ - Ken WONG (KWG) – IM2AG, Grenoble
+ - Mireille PALMA (MPA) – AccessIT, Lisbonne
+ - Paolo SANTIAGO SANCHEZ (PSO) – AccessIT, Caracas
+ - Hong SHI (HSI) – AccessIT, Zurich
+ - Tararya NARAMANATA (TNA) – AccessIT, Nantes
+ - Zork SWISH (ZSH) – AccessIT, Autriche
+ - Cassandra COHEN (CCN) - IM2AG, Grenoble
+
+#. Le présent projet a été baptisé iAccess.
+#. Les demandes de sécurisation de sites et de bâtiments se développent suite aux attentats des dernières années. Il s'agit d'une opportunité commerciale pour les sociétés de sécurité comme AccessIT.
+#. La société AccessIT est spécialisée dans les systèmes de contrôle d’accès.
+#. AccessIT ne produit pas les équipements de sécurité, mais les assemble et les installe.
+#. Les logiciels contrôlant ces équipements sont développés par AccessIT à la demande pour chaque site.
+#. L'équipe informatique de AccessIT est assez limitée actuellement. 
+#. Avec l'augmentation de la demande, AccessIT doit faire appel à des prestataires extérieurs pour répondre à ses clients.
+#. La conception de certaines versions de iAccess sera donc confiée à l'UFR IM2AG.
+#. Un certain nombre de contraintes techniques ont été déjà mentionnées : les développements devront se faire en Python 3.7 avec le framework Django.
+#. Le choix de Python/Django est lié au fait que AccessIT utilise déjà ces technologies en interne.
+#. Pour le matériel de sécurité, AccessIT a passé un accord avec Bissis.
+#. Bissis est un constructeur proposant du matériel à la pointe de l'innovation.
+#. En particulier AccessIT a décidé de se baser des bissas (sas à deux portes) pour toutes ses offres.
+#. AccessIT et Bissis ont passé un accord pour mettre sur le marché des bissas le plus rapidement possible.
+#. Bissis sera donc partie prenante pour le projet et fournira les bissas, avec leurs drivers.
+#. Une prochaine réunion aura lieu dans les locaux de Bissis à Berlin pour étudier les bissas.
+#. Différentes organisations ont déjà contacté AccessIT pour la mise en place de iAccess.
+#. Les sites des jeux olympiques de Tokyo doivent également être sécurisées pour 2020.
+#. L'entreprise chimique Chimiotis désire aussi sécuriser son site de Morrocoy.
+#. Plusieurs universités indiennes voudraient également migrer vers iAccess en 2020.
+#. Les commerciaux de AccessIT prévoient une augmentation exponentielle des demandes au prochain trimestre.
+#. Chaque version de iAccess sera conçue et développée de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
+#. AccessIT a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
+#. Plus particulièrement un accord a été passé avec ModelioSoft-Paris pour des licences Modelio.
+#. AccessIT utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
+#. La conception de la version de iAccess pour Morrocoy a été confiée à l’IM2AG
+#. La prochaine réunion aura lieu à Londres en présence de Competis.
+#. En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si toutes les parties prenantes parviennent à participer et à mettre en œuvre leur savoir-faire.
+#. Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées par ce nouveau contexte sécuritaire.
