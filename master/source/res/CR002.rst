@@ -1,7 +1,7 @@
 CR002 Réunion iPark pour l'Hôtel du Département de l'Isère
 ==========================================================
 
-:Date: 02-17 15h-23h
+:Date: 02-17 15h-18h
 :Type: Réunion
 :Lieu: Grenoble - Park Hôtel
 :PartiesPrenantes: ABI, JDR, PSO, AGO

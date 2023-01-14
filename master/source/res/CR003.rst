@@ -1,7 +1,7 @@
 CR003 Matériels de contrôle d'accès 
 ===================================
 
-:Date: 03-15-07h-20h
+:Date: 03-15 7h-17h
 :Type: Réunion
 :PartiesPrenantes: KWG, CMS, YBI, MPA, ZSH
 :Lieu: Berlin chez Z-Park
