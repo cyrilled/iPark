@@ -13,9 +13,7 @@ CR002 Réunion iPark pour l'Hôtel du Département de l'Isère
 .. attention::
     Ce compte rendu est un *document de travail* et n'est pas contractuel.
 
-
-Nouvel intervenant, directeur des services généraux de l'Hôtel du département :
- - Eliezer LAEMMEL (ELL) - Grenoble, Département de l'Isère
+Nouvel intervenant, directeur des services généraux de l'Hôtel du département : Eliezer LAEMMEL (ELL) - Grenoble, Département de l'Isère
 
 #. Grâce aux contacts d'AGO, une rencontre sur le projet l'Hôtel du département de l'Isère a été organisée opportunément.
 #. Le Département de l'Isère désire s’équiper d'un nouveau système de contrôle d'accès de son parking.
@@ -43,7 +41,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
 #. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
-#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
+*. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
 #. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
 #. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
