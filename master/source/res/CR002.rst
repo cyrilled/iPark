@@ -42,7 +42,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
 #. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
-*. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
+#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
 #. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
 #. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
