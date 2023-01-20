@@ -13,7 +13,8 @@ CR002 Réunion iPark pour l'Hôtel du Département de l'Isère
 .. attention::
     Ce compte rendu est un *document de travail* et n'est pas contractuel.
 
-Nouvel intervenant, directeur des services généraux de l'Hôtel du département : Eliezer LAEMMEL (ELL) - Grenoble, Département de l'Isère
+Nouvel intervenant, directeur des services généraux de l'Hôtel du département : 
+- Eliezer LAEMMEL (ELL) - Grenoble, Département de l'Isère
 
 #. Grâce aux contacts d'AGO, une rencontre sur le projet l'Hôtel du département de l'Isère a été organisée opportunément.
 #. Le Département de l'Isère désire s’équiper d'un nouveau système de contrôle d'accès de son parking.

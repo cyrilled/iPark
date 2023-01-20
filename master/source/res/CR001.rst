@@ -12,7 +12,7 @@ CR001 Réunion de lancement de iPark
 
 ..  attention::
 
-    Ce compte rendu est un document de travail et n'est pas contractuel.
+    Ce compte rendu est un *document de travail** et n'est pas contractuel.
 
 En ce début de projet, les parties prenantes sont les suivantes :
  - Ahmed BLASI (ABI) – MIAGE, Grenoble
