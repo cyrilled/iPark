@@ -38,16 +38,17 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
         :align: center
 
         Fig. 2 : Parking Hôtel du département - Niveau supérieurs - Accès employés
-#. Les capteurs de passage dans le sol sont utilisé pour détecter la sortie ou l'entré d'un véhicule avant de refermer la barrière
+
+#. Les capteurs de passage dans le sol sont utilisé pour détecter la sortie ou l'entrée d'un véhicule avant de refermer la barrière
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
 #. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
-#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking.
+#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking. iPark enregistrera aussi leurs nom, prénoms, statut ainsi que leur service
 #. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
 #. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
-#. Par exemple l'administrateur des personnels d'une Maison du Département peut gérer les personnes de cette Maison et définir les niveaux auxquelles elles ont accès et à quels moments. 
+#. Par exemple l'administrateur des personnels d'une Maison du Département en les ajoutant au groupe via leur badge et définir les niveaux auxquelles elles ont accès et à quels moments. 
 #. Un autre administrateur s'occupe des personnels techniques de l'Hôtel du Département, etc.
 #. Bien entendu les administrateurs de groupe ne pourront pas donner à un groupe l'accès à des niveaux dont il n'est pas chargé.
 #. Le nombre de badgeurs par groupe va de 1 à 300 environ.
@@ -82,8 +83,8 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
 #. Par exemple, en cas d'horaire dépassé dans une zone d'accès restreint, après avoir discuté de la raison du dépassement, le gardien pourra laisser sortir le conducteur et enregistrer sa sortie.  
 
-#. Un élément important concerne les règles à appliquer en cas d'incendie dans un parking.
-#. Toutes les barrières doivent être ouvertes automatiquement.
+#. Un élément important concerne les règles à appliquer en cas d'incendie dans une zone.
+#. Les barrières des points de sortie doivent être ouvertes automatiquement.
 #. Il faut donc prendre en compte les systèmes à incendie et les interfacer avec iPark.
 
 #. La question de l'affichage du nombre de places disponibles par niveaux n'est été tranchée, rendre public cette donnée ne faisant pas l'unanimité.
