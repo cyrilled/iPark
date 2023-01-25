@@ -24,7 +24,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Les différents matériels ont été choisis pour répondre aux fonctions attendues.
 #. Il est rappelé qu'une présentation de ces matériels aura lieu à Berlin - Gate-IS.
 #. Un premier plan des parkings a été établi à partir des documents des architectes de l'Hôtel du département.
-#. La figure 1 montre le plan du parking public qui est en accès payant.
+#. La figure 1 montre le plan du parking public qui est en accès payant, avec un point d'accès au nord et un point de sortie au sud.
 
     .. _CR003-Fig1:
     .. figure:: media/hoteldept1.png
@@ -38,7 +38,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
         :align: center
 
         Fig. 2 : Parking Hôtel du département - Niveau supérieurs - Accès employés
-
+#. Les capteurs de passage dans le sol sont utilisé pour détecter la sortie ou l'entré d'un véhicule avant de refermer la barrière
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
@@ -59,28 +59,28 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. On pourra imaginer d'utiliser dans le futur des périodes d'accès standardisés pour les ré-utiliser avec plusieurs groupes.
 #. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes parking (cf. CR003-Fig1_ et CR003-Fig2_).
 #. Une autorisation doit être un triplet (groupe, période, zones).
-#. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau 1 ci-dessous.
+#. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau ci-dessous.
 
     .. table:: Tab. 1 : Exemple ELL 07-12
 
-        +------------+---------------------+-----------------+
-        | Groupe     |  Période            | Zone de parking |
-        +============+=====================+=================+
-        | Technique  | LMMJVSD 08:00-20:00 | N2,N3           |
-        +------------+---------------------+-----------------+
-        | RH centraux| LMMJVxx 9:00-18:00  | N2              |
-        +------------+---------------------+-----------------+
+        +------------+---------------------+------------------+
+        | Groupe     |  Période            | Zones de parking |
+        +============+=====================+==================+
+        | Technique  | LMMJVSD 08:00-20:00 | N2,N3, N7        |
+        +------------+---------------------+------------------+
+        | RH centraux| LMMJVxx 9:00-18:00  | N3               |
+        +------------+---------------------+------------------+
 
 #. Les autorisations sous forme de triplets pourraient aussi convenir a priori pour les autres parkings gérés par iPark.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
 
 #. Des gardiens sont chargé de gérer les incidents à l'entrée ou à la sortie d'un niveau.
-#. Ils peuvent depuis leur smartphone débloquer l'entrée ou la sortie d’une personne bloquée suite à un incident.
+#. Ils peuvent depuis leur smartphone débloquer l'entrée ou la sortie d’un conducteur bloqué suite à un incident.
 #. Si un véhicule n'est pas autorisée à sortir un incident est envoyé par iPark aux gardiens du parking.
-#. Le véhicule est alors bloqué dans niveau et doit attendre qu'un gardien le débloque.
+#. Le véhicule est alors bloqué dans la zone et doit attendre qu'un gardien le débloque.
 #. L'appli iPark du smartphone du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
 #. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
-
+#. Par exemple, en cas d'horaire dépassé dans une zone d'accès restreint, après avoir discuté de la raison du dépassement, le gardien pourra laisser sortir le conducteur et enregistrer sa sortie.  
 
 #. Un élément important concerne les règles à appliquer en cas d'incendie dans un parking.
 #. Toutes les barrières doivent être ouvertes automatiquement.
