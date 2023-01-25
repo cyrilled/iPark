@@ -61,15 +61,15 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Une autorisation doit être un triplet (groupe, période, zones).
 #. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau 1 ci-dessous.
 
-        +------------+---------------------+----------------+
-        | Groupe     |  Période            | Zone de parking|
-        +============+=====================+================+
-        | Technique  | LMMJVSD 08:00-20:00 | N2,N3          |
-        +------------+---------------------+----------------+
-        | RH centraux| LMMJVxx 9:00-18:00  | N2             |
-        +------------+---------------------+----------------+
-
     .. table:: Tab. 1 : Exemple ELL 07-12
+
+        +------------+---------------------+-----------------+
+        | Groupe     |  Période            | Zone de parking |
+        +============+=====================+=================+
+        | Technique  | LMMJVSD 08:00-20:00 | N2,N3           |
+        +------------+---------------------+-----------------+
+        | RH centraux| LMMJVxx 9:00-18:00  | N2              |
+        +------------+---------------------+-----------------+
 
 #. Les autorisations sous forme de triplets pourraient aussi convenir a priori pour les autres parkings gérés par iPark.
 #. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
