@@ -43,15 +43,15 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
-#. Même si différents groupes de badgeurs ont été identifiés, d'autres pourraient apparaître.
-#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking. iPark enregistrera aussi leurs nom, prénoms, statut ainsi que leur service
+#. Même si différents groupes de personnels ont été identifiés, d'autres pourraient apparaître.
+#. Chaque personnel dispose d'un badge de personnel du Département qui servira de badge d'accès au parking. iPark enregistrera aussi leurs nom, prénoms, statut ainsi que leur service.
 #. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
 #. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
 #. Par exemple l'administrateur des personnels d'une Maison du Département en les ajoutant au groupe via leur badge et définir les niveaux auxquelles elles ont accès et à quels moments. 
 #. Un autre administrateur s'occupe des personnels techniques de l'Hôtel du Département, etc.
 #. Bien entendu les administrateurs de groupe ne pourront pas donner à un groupe l'accès à des niveaux dont il n'est pas chargé.
-#. Le nombre de badgeurs par groupe va de 1 à 300 environ.
+#. Le nombre de personnels par groupe va de 1 à 300 environ.
 
 #. Les autorisations d'un groupe définissent les niveaux auxquels ses membres ont accès et à quelles périodes.
 #. Par exemple les élus ont besoin d'accès jusque tard dans la soirée et ont accès au parking du niveau 6.

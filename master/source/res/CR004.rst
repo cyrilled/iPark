@@ -40,12 +40,12 @@ CR004 Architecture et contraintes techniques
 #. Le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes administrateurs (autant que nécessaire) seront connectés au serveur applicatif par une liaison Ethernet, avec un client lourd utilisant le protocole https.
 #. Il s'agit dans les deux cas de PCs sous Linux.
 #. _
-#. Les administrateurs gèrent non seulement les badgeurs et leurs inscriptions à des groupes, mais aussi les problèmes liés au vol/perte d'un badge.
-#. Lorsqu'un badge est volé ou perdu, le badgeur est tenu d'en informer immédiatement son responsable qui transmet à l'administrateur de groupe du parking.
+#. Les administrateurs gèrent non seulement les personnels et leurs inscriptions à des groupes, mais aussi les problèmes liés au vol/perte d'un badge.
+#. Lorsqu'un badge est volé ou perdu, le personnel est tenu d'en informer immédiatement son responsable qui transmet à l'administrateur de groupe du parking.
 #. A chaque fois qu'un badge est annulé suite à une perte ou un vol, l'opération doit être enregistrée dans l'historique.
 #. Cette opération est effectuées par les administrateurs de groupes.
 
-#. Lorsqu'un badgeur appartient à plusieurs groupes, et si ces groupes sont gérés par différents administrateurs, n'importe quel de ces administrateurs peut enregistrer la perte du badge.
+#. Lorsqu'un personnel appartient à plusieurs groupes, et si ces groupes sont gérés par différents administrateurs, n'importe quel de ces administrateurs peut enregistrer la perte du badge.
 
 #. Finalement, le serveur applicatif est le seul élément de iPark a être connecté à internet via tcp-ip.
 #. C'est lui qui gèrera les web-services mentionnés auparavant.
