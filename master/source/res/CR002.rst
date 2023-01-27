@@ -39,7 +39,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 
         Fig. 2 : Parking Hôtel du département - Niveau supérieurs - Accès employés
 
-#. Les capteurs de passage dans le sol sont utilisé pour détecter la sortie ou l'entrée d'un véhicule avant de refermer la barrière
+#. Les capteurs de passage dans le sol sont utilisés pour détecter la sortie ou l'entrée d'un véhicule avant de refermer la barrière
 #. Chaque niveau supérieur est accessible ou non à un membre du personnel (salarié ou élu) en fonction de leur appartenance à un groupe.
 #. Ces groupes de personnes doivent pouvoir être définis dans iPark.
 #. On estime qu'il y aura environ 40 groupes pour les 4 700 employés et élus du Département.
