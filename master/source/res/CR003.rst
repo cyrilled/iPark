@@ -92,12 +92,11 @@ Nouvelles parties prenantes :
 .. _HubParking:
     https://www.hubparking.fr/
 
-.. _lien
+.. _lien:
     https://drive.google.com/file/d/1jvTm92rrcoI-heeFVwHlMFZ9JT8szxKm/view
 
 .. |ici| replace::
 
     :download:`ici <./media/Parking payant.mpg>`
-
 
 .. _`QR codes`: http://en.wikipedia.org/wiki/QR_code
