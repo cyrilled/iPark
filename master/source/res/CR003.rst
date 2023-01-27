@@ -97,7 +97,7 @@ Nouvelles parties prenantes :
 
 .. |ici| replace::
 
-    :download:`VideoParkingPayant <./media/Parking payant.mpg>`
+    :download:`ici <./media/Parking payant.mpg>`
 
 
 .. _`QR codes`: http://en.wikipedia.org/wiki/QR_code
