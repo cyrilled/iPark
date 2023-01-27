@@ -51,14 +51,14 @@ Nouvelles parties prenantes :
 
 #. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
-#. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement à bande magnétique ou code-barres
+#. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement à bande magnétique ou `QR codes`_.
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
 #. La borne fournit également une vérification de cartes d'accès.
 #. Cette fonction est nécessaire pour les parties de parking à accès privé ou sur abonnement.
-#. Les lecteurs des des bornes sont polyvalents et permettent plusieurs types d'identification.
-#. Ils sont compatibles des cartes classiques ou sans contact (jusqu'à 5m).
+#. Les lecteurs des bornes sont polyvalents et permettent plusieurs types d'identification.
+#. Ils sont compatibles avec cartes classiques ou sans contact (jusqu'à 5m).
 #. Les bornes possèdent un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
-#. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens
+#. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens.
 
 #. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
 #. Ils permettent non seulement de comptabiliser les véhicules présents dans une zone, mais aussi, couplés avec une seconde barrière aval, d'éviter le piggypacking en sortie de zone payante
@@ -73,7 +73,7 @@ Nouvelles parties prenantes :
 #. Les automates de paiement permettent de régler avant de sortir le prix du parking en fonction de la durée de stationnement. L'utilisateur introduit son ticket, règle le montant par carte bancaire et obtient en retour un ticket de sortie. L'automate gère directement le paiement en se connectant par 4G au système bancaire du gestionnaire du parking.
 
 #. Pour iPark, l'identification des cartes et badges et surtout la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 5 secondes.
-#. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de points avec plus de 200 entrées ou sorties par heure un soin tout particulier devra être apporté à cet aspect.
+#. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 200 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
 
 #. Tous les matériels doivent être reliés au serveur de contrôle du site via des câbles RJ12 et utiliser le protocole "RFC 873"
 #. Le serveur de contrôle doit être installé dans une salle sécurisée proche des matériels d'accès du site.
@@ -89,14 +89,10 @@ Nouvelles parties prenantes :
 
 .. ............................................................................
 
-.. _HubParking:
-    https://www.hubparking.fr/
+.. _HubParking: https://www.hubparking.fr/
 
-.. _lien:
-    https://drive.google.com/file/d/1jvTm92rrcoI-heeFVwHlMFZ9JT8szxKm/view
+.. _lien: https://drive.google.com/file/d/1jvTm92rrcoI-heeFVwHlMFZ9JT8szxKm/view
 
-.. |ici| replace::
-
-    :download:`ici <./media/Parking payant.mpg>`
+.. |ici| replace:: :download:`ici <./media/Parking payant.mpg>`
 
 .. _`QR codes`: http://en.wikipedia.org/wiki/QR_code
