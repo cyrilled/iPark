@@ -47,7 +47,7 @@ CR004 Architecture et contraintes techniques
 
 #. Lorsqu'un personnel appartient à plusieurs groupes, et si ces groupes sont gérés par différents administrateurs, n'importe quel de ces administrateurs peut enregistrer la perte du badge.
 
-#. Finalement, le serveur applicatif est le seul élément de iPark a être connecté à internet via tcp-ip.
+#. Finalement, le serveur applicatif est le seul élément de iPark a être connecté à internet via TCP-IP.
 #. C'est lui qui gèrera les web-services mentionnés auparavant.
 #. _
 #. Il est fait état d'un démarrage éminent de la phase de collecte des exigences.
