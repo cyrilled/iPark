@@ -37,17 +37,17 @@ Nouvelles parties prenantes :
 #. Il s'agit bien entendu de tester tous les scénarios de passage : sans incident ou avec incident générant des alarmes envoyées aux gardiens.
 
 #. Les matériels principaux fournis par Z-Park sont des barrières, des bornes à tickets, des automates de paiement, des capteurs de passage, des caméra de surveillance et des lecteurs de plaque minéralogique
-#. Un exemple de fonctionnement basique est montré sur |ce lien| (téléchargement |ici|)
+#. Un exemple de fonctionnement basique est montré sur ce lien_ (téléchargement |ici|)
 
 #. Les barrières levantes peuvent avoir des lisses de différentes formes et tailles mais sont toutes contrôlables par le même driver.
-#. Les bornes à tickets ressembleront *par certains aspects* à la borne "ZEAG-LE" de HubParking présenté dans la figure 1 ci-dessous
+#. Les bornes à tickets ressembleront *par certains aspects* à la borne "ZEAG-LE" de HubParking_ présenté dans la figure 1 ci-dessous
 
     .. _CR004Fig1:
 
     .. figure:: media/zg-le.jpg
         :align: center
 
-        Fig. 1 : *"borne ZEAG-LE"* par HubParking_
+        Fig. 1 : *"borne ZEAG-LE"* par HubParking
 
 #. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
@@ -92,7 +92,7 @@ Nouvelles parties prenantes :
 .. _HubParking:
     https://www.hubparking.fr/
 
-.. |ce lien| replace::
+.. _lien
     https://drive.google.com/file/d/1jvTm92rrcoI-heeFVwHlMFZ9JT8szxKm/view
 
 .. |ici| replace::
