@@ -28,7 +28,7 @@ CR004 Architecture et contraintes techniques
 #. AccessIT mentionne qu'il est possible d'installer des systèmes de brouillage et bien d'autres choses, qui rendent ce réseau à la fois sûr et fiable.
 
 #. Les incidents doivent être localisés (e.g. niveau, zone, point d'accès, ...) et gardés dans l'historique.
-#. En fonction des cas, et la plupart du temps après s'être rendu sur place, le gardien choisit de prendre en charge un incident ou de le laisser aux autres gardiens.
+#. En fonction de sa disponibilité, le gardien choisit de prendre en charge un incident ou de le laisser aux autres gardiens.
 #. Lorsqu'un gardien prend un incident, celui change d'état ("nouveau" -> "affecté"). 
 #. À partir de ce moment c'est lui qui contrôle totalement le point d'accès concerné jusqu'à ce qu'il déclare l'incident clos. 
 #. Pour régler l'incident le gardien agit sur les équipement du point d'accès depuis son smartphone.
