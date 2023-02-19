@@ -77,7 +77,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 
 #. Des gardiens sont chargé de gérer les incidents à l'entrée ou à la sortie d'un niveau.
 #. Ils peuvent depuis leur smartphone débloquer l'entrée ou la sortie d’un conducteur bloqué suite à un incident.
-#. Si un véhicule n'est pas autorisée à sortir un incident est envoyé par iPark aux gardiens du parking.
+#. Si un véhicule n'est pas autorisé à sortir un incident est envoyé par iPark aux gardiens du parking.
 #. Le véhicule est alors bloqué dans la zone et doit attendre qu'un gardien le débloque.
 #. L'appli iPark du smartphone du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
 #. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
