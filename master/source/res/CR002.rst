@@ -48,7 +48,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Ces badges au format carte de crédit fonctionnent sans contact avec la technologie RFID.
 #. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
-#. Par exemple l'administrateur des personnels d'une Maison du Département en les ajoutant au groupe via leur badge et définir les niveaux auxquelles elles ont accès et à quels moments. 
+#. Par exemple l'administrateur des personnels des Maisons des départements peut ajouter un personnel d'une Maison dans Ipark à partir de son numéro de badge, l'ajouter au groupe "Bièvre". et définir les niveaux auxquelles le groupe "Bièvre" a accès et à quels moments.
 #. Un autre administrateur s'occupe des personnels techniques de l'Hôtel du Département, etc.
 #. Bien entendu les administrateurs de groupe ne pourront pas donner à un groupe l'accès à des niveaux dont il n'est pas chargé.
 #. Le nombre de personnels par groupe va de 1 à 300 environ.
