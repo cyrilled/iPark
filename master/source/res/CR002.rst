@@ -80,7 +80,7 @@ Nouvel intervenant, directeur des services généraux de l'Hôtel du départemen
 #. Si un véhicule n'est pas autorisé à sortir (ticket non payé, sortie trop tardive, appel du conducteur qui a perdu son ticket, ...) un incident est envoyé par iPark aux gardiens du parking.
 #. Le véhicule est alors bloqué dans la zone et doit attendre qu'un gardien le débloque.
 #. L'appli iPark du smartphone du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
-#. Le gardien peut alors, suivant les cas, ouvrir le micro, ke haut-parleur de la borne, lancer la vidéo de surveillance du point d'accès, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
+#. Le gardien peut alors, suivant les cas, ouvrir le micro et le haut-parleur de la borne à tickets, lancer la vidéo de surveillance du point d'accès, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
 #. Par exemple, en cas d'horaire dépassé dans une zone d'accès restreint, après avoir discuté de la raison du dépassement, le gardien pourra laisser sortir le conducteur et enregistrer sa sortie.  
 
 #. Un élément important concerne les règles à appliquer en cas d'incendie dans une zone.
