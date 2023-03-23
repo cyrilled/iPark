@@ -34,7 +34,7 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. **INSTALLATION DES MATERIELS de CONTROLE D'ACCES**
 #. ######
 #. L'installation d'un matériel s'effectue de la façon suivante
-#. -- sur le serveur applicatif : création d'une instance de Matériel (dans la sous-classe correspondante) en lui donnant le numéro de série du matériel et d'un contrôleur de matériel en lui donnant l'oid du du Matériel.
+#. -- sur le serveur applicatif : création d'une instance de Matériel (dans la sous-classe correspondante) en lui donnant le numéro de série du matériel et d'un contrôleur de matériel en lui donnant l'oid du Matériel.
 #. Exemple : appel du constructeur Barrière(k5554v2), qui crée une instance de Barrière d'oid b5670 et appel du constructeur ContrôleurBarrière(b5670), qui crée une instance de ContrôleurBarrière d'oid cb9973 liée à b5670
 #. -- Connexion physique du matériel au panneau de brassage du serveur de contrôle
 #. -- Installation du code du driver de matériel sur le serveur de contrôle
@@ -44,13 +44,12 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. Exemple le DriverBarrière d'oid db6643 appelle lierAMateriel(db6643) sur le ContrôleurBarrière d'oid cb9973
 #. De la sorte, le contrôleur de matériel connait les oids du driver de matériel qu'il contrôle et de l'objet persistant qui représente le matériel dans le système, et le driver de matériel connait l'oid de son contrôleur 
 #. Exemple : le contrôleur de barrière cb9973 connait l'oid db6643 du driver de matériel qu'il contrôle et de l'objet persistant b5670 qui représente la barrière dans le système, et le driver de barrière db6643 connait l'oid de son contrôleur cb9973
-#. -- Enfin l'instance du driver de matériel
-#. - des bornes à tickets d'entrée par badge se met en attente du passage d'un badge ou d'un appel audio 
-#. - des bornes à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
-#. - des bornes à tickets de sortie par badge se met en attente du passage d'un badge ou d'un appel audio
-#. - des bornes à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
-#. - des bornes de paiement se met en attente d'une introduction de ticket
-#. - des autres matériels est prête à répondre à une commande de son contrôleur de matériel depuis le serveur applicatif
+#. -- Pour finir selon les cas
+#. - le driver d'un borne à tickets d'entrée par badge se met en attente du passage d'un badge ou d'un appel audio 
+#. - le driver d'un borne à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
+#. - le driver d'un borne à tickets de sortie par badge se met en attente du passage d'un badge ou d'un appel audio
+#. - le driver d'un borne à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
+#. - le driver d'un borne de paiement se met en attente d'une introduction de ticket
 #. ######
 #. **FONCTIONNEMENT EN CONTINU**
 #. ######
@@ -58,7 +57,7 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. A la lecture d'un badge, le driver de borne à tickets d'entrée appelle l'opération contrôlerEntrée(code entier) de son contrôleur de matériel où code est le numéro du badge lu. La méthode de cette opération va gérer l'entrée par ce point d'accès.
 #. **Borne à tickets d'entrée payante**
 #. A la demande de ticket, le driver de borne à tickets imprime et sort un ticket de stationnement et appelle l'opération contrôlerEntrée(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket sorti. La méthode de cette opération va gérer le l'entrée par ce point d'accès.
-#. **Borne à tickets de sortie par badge **
+#. **Borne à tickets de sortie par badge**
 #. A la lecture d'un badge, le driver de borne à tickets d'entrée appelle l'opération contrôlerSortie(code entier) de son contrôleur de matériel où code est le numéro du badge lu. La méthode de cette opération va gérer la sortie par ce point d'accès.
 #. **Borne à tickets de sortie payante**
 #. A la lecture d'un ticket, le driver de borne appelle l'opération contrôlerSortie(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket de stationnement. La méthode de cette opération va gérer l'entrée par ce point d'accès.
