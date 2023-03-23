@@ -10,7 +10,7 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 
 #. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
 #. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
-#.**Tous les matériels**
+#. **Tous les matériels**
 #. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
 #. - port : le numéro du port de connexion au panneau de brassage du bissas
 #. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
