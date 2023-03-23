@@ -10,6 +10,7 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 
 #. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
 #. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
+#.**Tous les matériels**
 #. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
 #. - port : le numéro du port de connexion au panneau de brassage du bissas
 #. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
@@ -45,12 +46,12 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. De la sorte, le contrôleur de matériel connait les oids du driver de matériel qu'il contrôle et de l'objet persistant qui représente le matériel dans le système, et le driver de matériel connait l'oid de son contrôleur 
 #. Exemple : le contrôleur de barrière cb9973 connait l'oid db6643 du driver de matériel qu'il contrôle et de l'objet persistant b5670 qui représente la barrière dans le système, et le driver de barrière db6643 connait l'oid de son contrôleur cb9973
 #. -- Enfin l'instance du driver de matériel
-- des bornes à tickets d'entrée par badge se met en attente du passage d'un badge ou d'un appel audio 
-- des bornes à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
-- des bornes à tickets de sortie par badge se met en attente du passage d'un badge ou d'un appel audio
-- des bornes à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
-- des bornes de paiement se met en attente d'une introduction de ticket
-- des autres matériels est prête à répondre à une commande de son contrôleur de matériel depuis le serveur applicatif
+#. - des bornes à tickets d'entrée par badge se met en attente du passage d'un badge ou d'un appel audio 
+#. - des bornes à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
+#. - des bornes à tickets de sortie par badge se met en attente du passage d'un badge ou d'un appel audio
+#. - des bornes à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
+#. - des bornes de paiement se met en attente d'une introduction de ticket
+#. - des autres matériels est prête à répondre à une commande de son contrôleur de matériel depuis le serveur applicatif
 #. ######
 #. **FONCTIONNEMENT EN CONTINU**
 #. ######
