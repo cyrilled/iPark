@@ -9,12 +9,12 @@ Annexe - Documentation technique
 Ce document présente l'installation et le fonctionnement des drivers de bissas
 
 #. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
-#. #####
 #. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
-#. -- lancer(port entier, numSérie entier, refContrôleur Contrôleur). Lance une instance du driver avec
+#. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
 #. - port : le numéro du port de connexion au panneau de brassage du bissas
-#. - numSérie : le numéro de série du materiel
 #. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
+#. Ce constructeur générique a des sous-opération pour chacun des types de matériels.
+#. Par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
 #. Des opérations sont spécifiques à chaque type de matériel
 #. **Borne à ticket**
 #. -- imprimerTicket(n entier). Imprime et sort un ticket de parking de numéro n.
@@ -28,8 +28,8 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. -- détecter(t temps) : chaîne. Détecte le passage d'un un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK sinon.
 #. **Caméra de surveillance**
 #. -- lancer() : chaîne. Lance la diffusion de la caméra. Renvoie un lien vers le flux vidéo si la caméra fonctionne, KO sinon.
-#. **Automate de paiement**
-#. 
+#. **Borne de paiement**
+#. Les méthodes ne sont pas encore documentées
 #. #########
 #. **INSTALLATION DES MATERIELS de CONTROLE D'ACCES**
 #. ######
@@ -66,4 +66,3 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. A l'appui sur le bouton d'appel audio, le driver de borne appelle l'opération appelAudio() de son contrôleur de matériel. La méthode de cette opération va gérer l'appel audio depuis ce point de passage.
 #. **Borne de paiement**
 #. A la lecture d'un ticket, le driver de borne de paiement d'entrée appelle l'opération contrôlerPaiement(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket de stationnement lu. La méthode de cette opération va gérer le paiement par cette borne point d'accès.
-#. D'autres méthodes sont présentes qui ne sont pas encore documentées
