@@ -53,7 +53,7 @@ Nouvelles parties prenantes :
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
 #. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement à bande magnétique ou `QR codes`_.
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
-#. La borne fournit également une vérification de cartes d'accès.
+#. La borne dispose également d'un lecteur de cartes d'accès.
 #. Cette fonction est nécessaire pour les parties de parking à accès privé ou sur abonnement.
 #. Les lecteurs des bornes sont polyvalents et permettent plusieurs types d'identification.
 #. Ils sont compatibles avec cartes classiques ou sans contact (jusqu'à 5m).

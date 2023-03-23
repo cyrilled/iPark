@@ -8,7 +8,7 @@ Annexe - Documentation technique
 
 Ce document présente l'installation et le fonctionnement des drivers de bissas
 
-#. DRIVERS DES MATERIELS de CONTROLE D'ACCES
+#. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
 #. #####
 #. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. -- lancer(port entier, numSérie entier, refContrôleur Contrôleur). Lance une instance du driver avec
@@ -16,40 +16,54 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. - numSérie : le numéro de série du materiel
 #. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
 #. Des opérations sont spécifiques à chaque type de matériel
-#. **Barrière**
 #. **Borne à ticket**
-#. **Automate de paiement**
+#. -- imprimerTicket(n entier). Imprime et sort un ticket de parking de numéro n.
+#. -- sortirTicket(). Sort le ticket de parking du lecteur de tickets.
+#. -- diffuser(m message). Diffuse le message audio m sur les hauts-parleurs.
+#. -- ouvrirMicro(). Ouvre le micro.
+#. **Barrière**
+#. -- lever() : chaîne. Lève la barrière. Renvoie KO en cas d'échec (impossible de lever la barrière), OK sinon 
+#. -- baisser() : chaîne. Baisse la barrière. Renvoie KO en cas d'échec (impossible de baisser la barrière), OK sinon
 #. **Capteur de passage**
+#. -- détecter(t temps) : chaîne. Détecte le passage d'un un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK sinon.
 #. **Caméra de surveillance**
-#. -- allumerLedLecteur(f face, c couleur, t entier). Allume la LED du lecteur de badge sur la face f avec la couleur c pendant t secondes. Les valeurs de couleur possibles sont vert, orange, rouge. Quand t=0 la LED est allumée jusqu'à la prochaine commande de changement.
-#. -- clignoterLedLecteur(f face, c couleur, t entier). Fait clignoter la LED du lecteur de badge sur la face f avec la couleur c pendant t secondes. Les valeurs de couleur possibles sont vert, orange, rouge. Quand t=0 la LED clignote jusqu'à la prochaine commande de changement. 
-#. -- ouvrirPorte(face:caractère, entrée:booléen) : chaîne. Ouvre la porte de la face du bissas passée en paramètre
-#. si entrée est vrai, renvoie KO en cas d'échec (impossible d'ouvrir la porte complètement), Full quand une personne est détectée présente, Piggybacking quand plus d'une personne est détectée présente et VOID quand personne n'est détecté au bout de 8 secondes
-#. si entrée est faux renvoie KO en cas d'échec (impossible d'ouvrir la porte complètement), VOID quand personne n'est détecté et Full quand une personne est détectée présente au bout de 8 secondes 
-#. -- fermerPorte(face:caractère) : chaîne. Ferme la porte de la face du bissas passée en paramètre et renvoie KO en cas d'échec (impossible de fermer la porte complètement), OK sinon
+#. -- lancer() : chaîne. Lance la diffusion de la caméra. Renvoie un lien vers le flux vidéo si la caméra fonctionne, KO sinon.
+#. **Automate de paiement**
+#. 
 #. #########
-#. OPERATIONS SPECIFIQUES AUX BISSAS XTRA
-#. -- l'opération ouvrirPorte() est redéfinie. Elle renvoie METAL quand du métal est détecté à l'intérieur du bissas, en plus des retours standards de ouvrirPorte() des drivers de BISSAS.
-#. -- scannerEmpreinte(face) : digitCode. Lance le scan d'une empreinte digitale sur le lecteur interne de la face passée en paramètre
-#. #########
-#. OPERATIONS SPECIFIQUES AUX BISSAS XTRA+
-#. -- scannerQRCode() : qrcode. Lance le scan d'un QRCode sur le lecteur externe face A
-#. ######
-#. OPERATIONS SPECIFIQUES AUX BISSAS METRA
-#. -- prendreTempérature() : décimal. Prend la température d'une personne présente à l'intérieur du bissas
-#. ######
-#. INSTALLATION DES BISSAS
+#. **INSTALLATION DES MATERIELS de CONTROLE D'ACCES**
 #. ######
 #. L'installation d'un matériel s'effectue de la façon suivante
-#. -- sur le serveur applicatif : création d'un contrôleur de matériel et d'une instance de la sous-classe adéquate de Matériel en leur donnant le numéro de série du bissas. On récupère leurs oids.
-#. -- Connexion physique du bissas au panneau de brassage du serveur de contrôle 
-#. -- Installation du code des drivers de bissas sur le serveur de contrôle
-#. -- Lancement sur le serveur de contrôle d'une instance du driver de bissas, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage, le numéro de série du bissas et l'oid du contrôleur de bissas qui va le commander
-#. -- Appel par cette instance de driver de l'opération lierABissas(oid) du contrôleur de bissas. Elle indique au contrôleur de bissas la référence objet (oid) du bissas qu'il va commander
-#. -- Une fois lancée l'instance du driver de bissas est en attente du passage d'un badge sur un de ses lecteur
+#. -- sur le serveur applicatif : création d'une instance de Matériel (dans la sous-classe correspondante) en lui donnant le numéro de série du matériel et d'un contrôleur de matériel en lui donnant l'oid du du Matériel.
+#. Exemple : appel du constructeur Barrière(k5554v2), qui crée une instance de Barrière d'oid b5670 et appel du constructeur ContrôleurBarrière(b5670), qui crée une instance de ContrôleurBarrière d'oid cb9973 liée à b5670
+#. -- Connexion physique du matériel au panneau de brassage du serveur de contrôle
+#. -- Installation du code du driver de matériel sur le serveur de contrôle
+#. -- Création sur le serveur de contrôle d'une instance du driver de matériel, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage et l'oid du contrôleur de matériel qui va le commander par la suite
+#. Exemple : appel de DriverBarrière(61,cb9973) qui crée une instance de DriverBarrière d'oid db6643
+#. -- Appel par cette instance de driver de l'opération lierAMateriel(oid DriverMateriel) du contrôleur de matériel. Elle indique au contrôleur de bissas la référence objet (oid) du driver de matériel qu'il va commander
+#. Exemple le DriverBarrière d'oid db6643 appelle lierAMateriel(db6643) sur le ContrôleurBarrière d'oid cb9973
+#. De la sorte, le contrôleur de matériel connait les oids du driver de matériel qu'il contrôle et de l'objet persistant qui représente le matériel dans le système, et le driver de matériel connait l'oid de son contrôleur 
+#. Exemple : le contrôleur de barrière cb9973 connait l'oid db6643 du driver de matériel qu'il contrôle et de l'objet persistant b5670 qui représente la barrière dans le système, et le driver de barrière db6643 connait l'oid de son contrôleur cb9973
+#. -- Enfin l'instance du driver de matériel
+- des bornes à tickets d'entrée par badge se met en attente du passage d'un badge ou d'un appel audio 
+- des bornes à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
+- des bornes à tickets de sortie par badge se met en attente du passage d'un badge ou d'un appel audio
+- des bornes à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
+- des bornes de paiement se met en attente d'une introduction de ticket
+- des autres matériels est prête à répondre à une commande de son contrôleur de matériel depuis le serveur applicatif
 #. ######
-#. FONCTIONNEMENT EN CONTINU
+#. **FONCTIONNEMENT EN CONTINU**
 #. ######
-#. A la lecture d'un badge sur une de ses faces, le driver de Bissas appelle l'opération contrôlerBissas(face,bCode) où face est la face (A ou B) sur laquelle la lecture a été faite et bCode est le bCode du badge lu. La méthode de cette opération va gérer le passage dans le bissas.
-
-
+#. **Borne à tickets d'entrée par badge **
+#. A la lecture d'un badge, le driver de borne à tickets d'entrée appelle l'opération contrôlerEntrée(code entier) de son contrôleur de matériel où code est le numéro du badge lu. La méthode de cette opération va gérer l'entrée par ce point d'accès.
+#. **Borne à tickets d'entrée payante **
+#. A la demande de ticket, le driver de borne à tickets imprime et sort un ticket de stationnement et appelle l'opération contrôlerEntrée(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket sorti. La méthode de cette opération va gérer le l'entrée par ce point d'accès.
+#. **Borne à tickets de sortie par badge **
+#. A la lecture d'un badge, le driver de borne à tickets d'entrée appelle l'opération contrôlerSortie(code entier) de son contrôleur de matériel où code est le numéro du badge lu. La méthode de cette opération va gérer la sortie par ce point d'accès.
+#. **Borne à tickets de sortie payante **
+#. A la lecture d'un ticket, le driver de borne appelle l'opération contrôlerSortie(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket de stationnement. La méthode de cette opération va gérer l'entrée par ce point d'accès.
+#. **Toutes les borne à tickets**
+#. A l'appui sur le bouton d'appel audio, le driver de borne appelle l'opération appelAudio() de son contrôleur de matériel. La méthode de cette opération va gérer l'appel audio depuis ce point de passage.
+#. **Borne de paiement**
+#. A la lecture d'un ticket, le driver de borne de paiement d'entrée appelle l'opération contrôlerPaiement(noTicket entier) de son contrôleur de matériel où noTicket est le numéro du ticket de stationnement lu. La méthode de cette opération va gérer le paiement par cette borne point d'accès.
+#. D'autres méthodes sont présentes qui ne sont pas encore documentées
