@@ -4,17 +4,23 @@ Annexe - Documentation technique
 :Type: Documentation technique
 :Organisateur: ABI
 :Auteur: CDS
-:Objectif: Documenter le fonctionnement logiciel des bissas
+:Objectif: Documenter le fonctionnement logiciel des matériels de contrôle d'accès
 
 Ce document présente l'installation et le fonctionnement des drivers de bissas
 
-#. DRIVERS DES BISSAS
+#. DRIVERS DES MATERIELS de CONTROLE D'ACCES
 #. #####
-#. Les bissas sont fournis avec des drivers dont l'API est composée des opérations essentielles suivants
+#. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. -- lancer(port entier, numSérie entier, refContrôleur Contrôleur). Lance une instance du driver avec
 #. - port : le numéro du port de connexion au panneau de brassage du bissas
-#. - numSérie : le numéro de série du bissas
+#. - numSérie : le numéro de série du materiel
 #. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
+#. Des opérations sont spécifiques à chaque type de matériel
+#. **Barrière**
+#. **Borne à ticket**
+#. **Automate de paiement**
+#. **Capteur de passage**
+#. **Caméra de surveillance**
 #. -- allumerLedLecteur(f face, c couleur, t entier). Allume la LED du lecteur de badge sur la face f avec la couleur c pendant t secondes. Les valeurs de couleur possibles sont vert, orange, rouge. Quand t=0 la LED est allumée jusqu'à la prochaine commande de changement.
 #. -- clignoterLedLecteur(f face, c couleur, t entier). Fait clignoter la LED du lecteur de badge sur la face f avec la couleur c pendant t secondes. Les valeurs de couleur possibles sont vert, orange, rouge. Quand t=0 la LED clignote jusqu'à la prochaine commande de changement. 
 #. -- ouvrirPorte(face:caractère, entrée:booléen) : chaîne. Ouvre la porte de la face du bissas passée en paramètre
@@ -34,8 +40,8 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. ######
 #. INSTALLATION DES BISSAS
 #. ######
-#. L'installation d'un bissas s'effectue de la façon suivante
-#. -- sur le serveur applicatif : création d'un contrôleur de bissas et d'une instance de la classe Bissas en leur donnant le numéro de série du bissas. On récupère leurs oids.
+#. L'installation d'un matériel s'effectue de la façon suivante
+#. -- sur le serveur applicatif : création d'un contrôleur de matériel et d'une instance de la sous-classe adéquate de Matériel en leur donnant le numéro de série du bissas. On récupère leurs oids.
 #. -- Connexion physique du bissas au panneau de brassage du serveur de contrôle 
 #. -- Installation du code des drivers de bissas sur le serveur de contrôle
 #. -- Lancement sur le serveur de contrôle d'une instance du driver de bissas, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage, le numéro de série du bissas et l'oid du contrôleur de bissas qui va le commander
