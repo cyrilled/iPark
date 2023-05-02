@@ -77,7 +77,7 @@ Nouvelles parties prenantes :
 
 #. Tous les matériels doivent être reliés au serveur de contrôle du site via des câbles RJ12 et utiliser le protocole "RFC 873"
 #. Le serveur de contrôle doit être installé dans une salle sécurisée proche des matériels d'accès du site.
-#. Il s'agit d'un matériel spécialisé quasi temps réel auquel les bissas sont connectés chacun par un câble sur un panneau de brassage (jusqu'à des centaines sur certains sites).
+#. Il s'agit d'un matériel spécialisé quasi temps réel auquel les matériels d'accès sont connectés chacun par un câble sur un panneau de brassage (jusqu'à des centaines sur certains sites).
 #. Ce serveur de contrôle devra être connecté au serveur applicatif via une liaison TCP/IP sécurisée.
 
 #. En conclusion de cette (longue) réunion, il apparaît clairement que les technologies innovantes proposées par Z-Park en font un partenaire idéal.
