@@ -18,7 +18,6 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. Des opérations sont spécifiques à chaque type de matériel
 #. **Borne à ticket**
 #. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
-#. -- sortirTicket(). Sort le ticket de parking du lecteur de tickets.
 #. -- diffuser(m message). Diffuse le message audio m sur les hauts-parleurs.
 #. -- ouvrirMicro(). Ouvre le micro.
 #. **Barrière**
