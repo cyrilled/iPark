@@ -6,14 +6,14 @@ Annexe - Documentation technique
 :Auteur: CDS
 :Objectif: Documenter le fonctionnement logiciel des matériels de contrôle d'accès
 
-Ce document présente l'installation et le fonctionnement des drivers de bissas
+Ce document présente l'installation et le fonctionnement des drivers et contrôleurs de matériels de contrôle d'accès
 
 #. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
 #. Les matériels de contrôle d'accès sont fournis avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. **Tous les matériels**
 #. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
-#. - port : le numéro du port de connexion au panneau de brassage du bissas
-#. - refContrôleur la référence (un oid) du contrôleur de bissas qui va le commander
+#. - port : le numéro du port de connexion au panneau de brassage du matériel
+#. - refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
 #. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
 #. Des opérations sont spécifiques à chaque type de matériel
 #. **Borne à ticket**
@@ -39,7 +39,7 @@ Ce document présente l'installation et le fonctionnement des drivers de bissas
 #. -- Installation du code du driver de matériel sur le serveur de contrôle
 #. -- Création sur le serveur de contrôle d'une instance du driver de matériel, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage et l'oid du contrôleur de matériel qui va le commander par la suite
 #. Exemple : appel de DriverBarrière(61,cb9973) qui crée une instance de DriverBarrière d'oid db6643
-#. -- Appel par cette instance de driver de l'opération lierAMateriel(oid DriverMateriel) du contrôleur de matériel. Elle indique au contrôleur de bissas la référence objet (oid) du driver de matériel qu'il va commander
+#. -- Appel par cette instance de driver de l'opération lierAMateriel(oid DriverMateriel) du contrôleur de matériel. Elle indique au contrôleur de matériel la référence objet (oid) du driver de matériel qu'il va commander
 #. Exemple le DriverBarrière d'oid db6643 appelle lierAMateriel(db6643) sur le ContrôleurBarrière d'oid cb9973
 #. De la sorte, le contrôleur de matériel connait les oids du driver de matériel qu'il contrôle et de l'objet persistant qui représente le matériel dans le système, et le driver de matériel connait l'oid de son contrôleur 
 #. Exemple : le contrôleur de barrière cb9973 connait l'oid db6643 du driver de matériel qu'il contrôle et de l'objet persistant b5670 qui représente la barrière dans le système, et le driver de barrière db6643 connait l'oid de son contrôleur cb9973
