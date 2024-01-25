@@ -68,15 +68,16 @@ Nouvelles parties prenantes :
 #. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
 #. Ils permettent non seulement de comptabiliser les véhicules présents dans une zone, mais aussi, couplés avec une seconde barrière aval, d'éviter le piggypacking en sortie de zone payante
 
-#. Les caméra de surveillance sont connectés de la même façon que les capteurs de passage et permettent la lecture des plaques minéralogiques. 
+#. Les caméra de surveillance et les lecteurs de plaque sont connectés de la même façon que les capteurs de passage. 
 
 #. En fait tous les matériels sont entièrement contrôlés par les drivers fournis par Z-Park (API fournie en annexe).
 #. Ces drivers seront installés sur le serveur de contrôle.
 #. Chaque matériel est connecté au panneau de brassage du serveur de contrôle par une connexion RFC 813
 #. Une fois de plus Z-Park propose le matériel pour gérer les accès, mais leurs fonctions devront être commandées depuis le serveur de contrôle via les drivers fournis.
 
-#. Les automates de paiement permettent de régler avant de sortir le prix du parking en fonction de la durée de stationnement. L'utilisateur introduit son ticket, règle le montant par carte bancaire et obtient en retour son ticket qui sert de ticket de sortie et un justificatif de paiement CB. L'automate gère directement le paiement en se connectant par 4G au système bancaire du gestionnaire du parking.
-#. Ce justificatif est similaire à celui de la figure 3 ci-dessous
+#. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. L'utilisateur introduit son ticket, passe sa carte bancaire dans le lecteur (ou avec un passage sans contact) et obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
+
+#. Ce justificatif CB est similaire à celui de la figure 3 ci-dessous
 
  .. _CR004Fig3:
 
@@ -84,8 +85,6 @@ Nouvelles parties prenantes :
         :align: center
 
         Fig. 3 : *"justificatif de paiement par carte bancaire"*
-
-#. Le paiement peut aussi être effectué sur les bornes d'accès et de sortie. L'utilisateur introduit son ticket, passe sa carte bancaire dans le lecteur (ou avec un passage sans contact) et obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
 
 #. Pour iPark, la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 3 secondes.
 #. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 400 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
