@@ -37,21 +37,21 @@ En ce début de projet, les parties prenantes sont les suivantes :
 #. L'équipe informatique de AccessIT est assez limitée actuellement. 
 #. Avec l'augmentation de la demande, AccessIT doit faire appel à des prestataires extérieurs pour répondre à ses clients.
 #. La conception de certaines versions de iPark sera donc confiée à MIAGE Grenoble.
-#. Un certain nombre de contraintes techniques ont été déjà mentionnées : les développements backend devront se faire avec Java JDBC/JEE sur le framework STRUTS et le SGBD ORACLE.
-#. Le choix de Java/STRUTS est lié au fait que AccessIT utilise déjà ces technologies en interne.
+#. Un certain nombre de contraintes techniques ont été déjà mentionnées : les développements backend devront se faire en C# sur le framework .NET et le SGBD SQL Server.
+#. Le choix de C#/.NET est lié au fait que AccessIT utilise déjà les technologies Microsoft.
 #. Pour le matériel d'accès, AccessIT a passé un accord avec Gate-IS.
 #. Gate-IS est un constructeur proposant du matériel à la pointe de l'innovation : barrières, capteurs. bornes, potelets, automates de paiement, ...
 #. Gate-IS sera donc partie prenante pour le projet et fournira les matériels, avec leurs drivers.
 #. Une prochaine réunion aura lieu dans les locaux de Gate-IS à Berlin pour étudier les matériels.
 #. Différentes organisations ont déjà contacté AccessIT pour la mise en place de iPark.
-#. Le département de l'Isère désire refaire le parking (privé et public) de l'Hôtel du département à l'occasion de sa rénovation énergétique.
-#. AccessIT a aussi été contactée par Ryokan, une entreprise qui gère des cliniques privées.
-#. Plusieurs villes indiennes voudraient également migrer vers iPark en 2024.
+#. Le Centre hospitalier universitaire Grenoble-Alpes (CHUGA) désire refaire le parking (privé et public) de l'Hôpital Michallon à l'occasion de sa rénovation énergétique.
+#. AccessIT a aussi été contactée par le Conseil Départemental de l'Isère, et Ryokan, une entreprise qui gère des cliniques privées.
+#. Plusieurs villes indiennes voudraient également migrer vers iPark en 2025.
 #. Les commerciaux de AccessIT prévoient une augmentation exponentielle des demandes au prochain trimestre.
-#. Chaque version de ipark sera conçue et développée de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
+#. Chaque version de iPark sera conçue et développée de façon incrémentale, en commençant par les fonctionnalités les plus demandées par les clients.
 #. AccessIT a décidé d'imposer l'utilisation d'UML pour la conception de ce projet (et d'autres projets).
 #. Plus particulièrement un accord a été passé avec Docaposte/Softeam (Paris) pour des licences Modelio.
 #. AccessIT utilisera une démarche agile pour s'assurer de l'adéquation du système avec les besoins des sites.
-#. La prochaine réunion aura lieu avec le Département de l'Isère au Park Hôtel de Grenoble vu que l'Hôtel du département n'est plus accessible.
+#. La prochaine réunion aura lieu avec le CHUGA à l'hôpital Michallon.
 #. En conclusion, il a été observé que ce consortium international ne pourrait fonctionner qui si toutes les parties prenantes parviennent à participer et à mettre en œuvre leur savoir-faire.
 #. Les différentes parties prenantes sont toutes conscientes des opportunités commerciales apportées par le contexte du réchauffement climatique.

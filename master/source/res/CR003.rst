@@ -33,7 +33,7 @@ Nouvelles parties prenantes :
 
 #. L'utilisation d'une spécification UML a été soulignée comme un point essentiel dans ce contexte tendu.
 
-#. Il a été convenu que MIAGE Grenoble fournira rapidement des scénarios qui serviront à écrire les tests de la version pour l'Hôtel du Département de l'Isère.
+#. Il a été convenu que MIAGE Grenoble fournira rapidement des scénarios qui serviront à écrire les tests de la version pour l'hôpital Michallon.
 #. Il s'agit bien entendu de tester tous les scénarios de passage : sans incident ou avec incident générant des alarmes envoyées aux gardiens.
 
 #. Les matériels principaux fournis par Z-Park sont des barrières, des bornes à tickets, des automates de paiement, des capteurs de passage, des caméra de surveillance et des lecteurs de plaque minéralogique
@@ -51,29 +51,44 @@ Nouvelles parties prenantes :
 
 #. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
-#. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement à bande magnétique ou `QR codes`_.
+#. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement utilisant des QR codes qui ressemblent *par certains aspects* à celui de la figure 2 ci-dessous
+ .. _CR004Fig2:
+
+    .. figure:: media/TicketQRCode.png
+        :align: center
+
+        Fig. 2 : *"ticket Michallon 2023"*
+
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
-#. La borne dispose également d'un lecteur de cartes d'accès.
-#. Cette fonction est nécessaire pour les parties de parking à accès privé ou sur abonnement.
-#. Les lecteurs des bornes sont polyvalents et permettent plusieurs types d'identification.
-#. Ils sont compatibles avec cartes classiques ou sans contact (jusqu'à 5m).
 #. Les bornes possèdent un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
-#. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens.
+#. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens ainsi que l'affichage de la vidéo.
+
+#. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
 
 #. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
 #. Ils permettent non seulement de comptabiliser les véhicules présents dans une zone, mais aussi, couplés avec une seconde barrière aval, d'éviter le piggypacking en sortie de zone payante
 
-#. Les caméra de surveillance et les lecteurs de plaque minéralogique sont connectés de la même façon que les capteurs de passage. 
+#. Les caméra de surveillance sont connectés de la même façon que les capteurs de passage et permettent la lecture des plaques minéralogiques. 
 
 #. En fait tous les matériels sont entièrement contrôlés par les drivers fournis par Z-Park (API fournie en annexe).
 #. Ces drivers seront installés sur le serveur de contrôle.
 #. Chaque matériel est connecté au panneau de brassage du serveur de contrôle par une connexion RFC 813
 #. Une fois de plus Z-Park propose le matériel pour gérer les accès, mais leurs fonctions devront être commandées depuis le serveur de contrôle via les drivers fournis.
 
-#. Les automates de paiement permettent de régler avant de sortir le prix du parking en fonction de la durée de stationnement. L'utilisateur introduit son ticket, règle le montant par carte bancaire et obtient en retour un ticket de sortie. L'automate gère directement le paiement en se connectant par 4G au système bancaire du gestionnaire du parking.
+#. Les automates de paiement permettent de régler avant de sortir le prix du parking en fonction de la durée de stationnement. L'utilisateur introduit son ticket, règle le montant par carte bancaire et obtient en retour son ticket qui sert de ticket de sortie et un justificatif de paiement CB. L'automate gère directement le paiement en se connectant par 4G au système bancaire du gestionnaire du parking.
+#. Ce justificatif est similaire à celui de la figure 3 ci-dessous
 
-#. Pour iPark, l'identification des cartes et badges et surtout la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 5 secondes.
-#. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 200 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
+ .. _CR004Fig3:
+
+    .. figure:: media/JustificatifPaiementCB.png
+        :align: center
+
+        Fig. 3 : *"justificatif de paiement par carte bancaire"*
+
+#. Le paiement peut aussi être effectué sur les bornes d'accès et de sortie. L'utilisateur introduit son ticket, passe sa carte bancaire dans le lecteur (ou avec un passage sans contact) et obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
+
+#. Pour iPark, la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 3 secondes.
+#. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 400 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
 
 #. Tous les matériels doivent être reliés au serveur de contrôle du site via des câbles RJ12 et utiliser le protocole "RFC 873"
 #. Le serveur de contrôle doit être installé dans une salle sécurisée proche des matériels d'accès du site.
