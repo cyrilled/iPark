@@ -1,0 +1,98 @@
+CR002 Réunion iPark pour le Centre hospitalier universitaire Grenoble-Alpes
+==========================================================
+
+:Date: 02-17 15h-18h
+:Type: Réunion
+:Lieu: Grenoble - Park Hôtel
+:PartiesPrenantes: ABI, JDR, PSO, AGO
+:Organisateur: ABI
+:Rapporteur: KWG
+:Presents: ABI, JDR, PSO, AGO,
+:Objectifs: CHU
+
+.. attention::
+    Ce compte rendu est un *document de travail* et n'est pas contractuel.
+
+Nouvel intervenant, directeur des services généraux du Centre hospitalier universitaire Grenoble-Alpes
+- Eliezer LAEMMEL (ELL)
+
+#. Grâce aux contacts d'AGO, une rencontre sur le projet du Centre hospitalier universitaire Grenoble-Alpes (CHUGA)a été organisée opportunément.
+#. Le CHUGA désire s’équiper d'un nouveau système de contrôle d'accès de son parking de l'hôpital Michallon à l'occasion de sa rénovation énérgétique.
+#. Il comprend à la fois des parties accessibles au personnel et d'autres au public en accès payant.
+#. Il s'agit donc d'un prospect chaud pour iPark.
+#. Les différents matériels ont été choisis pour répondre aux fonctions attendues.
+#. Il est rappelé qu'une présentation de ces matériels aura lieu à Berlin - Gate-IS.
+#. Un premier plan des parkings a été établi à partir des documents des architectes du CHUGA.
+#. La figure 1 montre le plan du parking public qui est en accès payant, avec un point d'accès au nord et un point de sortie au sud.
+
+    .. _CR002-Fig1:
+    .. figure:: media/hoteldept1.png
+        :align: center
+
+        Fig. 1 : Parking Michallon - Niveau 1 - Accès public payant
+
+#. La figure 2 montre le plan des niveaux supérieurs, dont l'accès est dédié au personnel du CHUGA.
+    .. _CR002-Fig2:
+    .. figure:: media/hoteldept2.png
+        :align: center
+
+        Fig. 2 : Parking Michallon - Niveau supérieurs - Accès personnels
+
+#. Les capteurs de passage dans le sol sont utilisés pour détecter la sortie ou l'entrée d'un véhicule avant de refermer la barrière
+#. Chaque niveau supérieur est accessible ou non à un membre du personnel en fonction de leur appartenance à un groupe.
+#. Ces groupes de personnes doivent pouvoir être définis dans iPark.
+#. On estime qu'il y aura environ 40 groupes pour les 9 7000 employés du CHUGA.
+#. Même si différents groupes de personnels ont été identifiés, d'autres pourraient apparaître.
+#. Chaque personnel devra donner la numéro de plaque d'immatriculation de son véhicule pour avoir accès au parking. iPark enregistrera aussi leurs nom, prénoms, statut ainsi que leur service.
+#. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
+#. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
+#. Par exemple l'administrateur des personnels des urgences peut ajouter un personnel infirmier dans iPark à partir de son numéro de badge, l'ajouter au groupe "Infirmer Urgence Nuit". et définir les niveaux auxquelles le groupe "Infirmer Urgence Nuit" a accès et à quels moments.
+#. Un autre administrateur s'occupe des personnels de restauration du CHUGA, etc.
+#. Bien entendu les administrateurs de groupe ne pourront pas donner à un groupe l'accès à des niveaux dont il n'est pas chargé.
+#. Le nombre de personnels par groupe va de 1 à 100 environ.
+
+#. Les autorisations d'un groupe définissent les niveaux auxquels ses membres ont accès et à quelles périodes.
+#. Par exemple les infirmiers de nuit des urgences ont besoin d'un accès de 20h à 6h et ont accès au parking du niveau 6.
+#. Les personnels les médecins de nuit des urgences ont eux aussi besoin d'un accès de 20h à 6h et ont accès au parking du niveau 5.
+#. Les personnels des RH centraux n'ont accès qu'aux horaires de bureau au parking du niveau 4.
+#. On pourra imaginer d'utiliser dans le futur des périodes d'accès standardisés pour les ré-utiliser avec plusieurs groupes.
+#. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes parking (cf. CR003-Fig1_ et CR003-Fig2_).
+#. Une autorisation définit ainsi la zone auquel un groupe peut accéder sur une période.
+#. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau ci-dessous.
+
+    .. table:: Tab. 1 : Exemple ELL 07-12
+
+        +------------+---------------------+------------------+
+        | Groupe     |  Période            | Zone de parking  |
+        +============+=====================+==================+
+        | Technique  | LMMJVSx 08:00-20:00 | N2               |
+        +------------+---------------------+------------------+
+        | RH centraux| LMMJVxx 9:00-18:00  | N4               |
+        +------------+---------------------+------------------+
+
+#. Les autorisations définies de cette façon devraient aussi convenir a priori pour les autres parkings gérés par iPark.
+#. Il s'agit en effet d'une représentation générale et sans doute satisfaisante.
+
+#. Des gardiens sont chargé de gérer les incidents à l'entrée ou à la sortie d'un niveau.
+#. Ils peuvent depuis leur tablette débloquer l'entrée ou la sortie d’un conducteur bloqué suite à un incident.
+#. Si un véhicule n'est pas autorisé à entrer ou sortir (ticket non reconnu, plaque d'immatriculation inconnue, appel du conducteur qui a perdu son ticket, ...) un incident est envoyé par iPark aux gardiens du parking.
+#. Le véhicule est alors bloqué dans la zone et doit attendre qu'un gardien le débloque.
+#. L'appli iPark de la tablette du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
+#. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
+#. Par exemple, en cas de plaque d'immatriculation non reconnue en entrée d'une zone d'accès restreint, après avoir discuté de la raison du problème, le gardien pourra laisser entrer le conducteur et enregistrer son entrée.
+#. Un élément important concerne les règles à appliquer en cas d'incendie dans une zone.
+#. Les barrières des points de sortie doivent être ouvertes automatiquement.
+#. Il faut donc prendre en compte les systèmes à incendie et les interfacer avec iPark.
+
+#. La question de l'affichage du nombre de places disponibles par niveaux n'est été tranchée, rendre public cette donnée ne faisant pas l'unanimité.
+
+#. La conservation de l'historique des événements (accès et incident) étant nécessaire dans le contexte sécuritaire actuel, cette fonctionnalité devra être intégrée à iPark.
+
+#. Un web service permettra à des systèmes externes (e.g. systèmes RH / de contrôle de présence) d'importer les événements d'accès de iPark (horaire d'entrée et sortie pour chaque niveau).
+#. Ce web service devra être sécurisé pour des aspects de confidentialité.
+
+#. En conclusion, la réunion sur rencontre sur le projet de l'hôpital Michallon a été très instructive.
+#. Il correspond bien aux fonctionnalités de base d'iPark.
+#. AccesIT confirme son intérêt de développer une version d'iPark pour ce parking.
+#. Cette version sera la première développée et sa conception sera faite au plus vite par MIAGE Grenoble.
+#. La prochaine réunion se fera à Berlin dans les locaux de Z-Park.
