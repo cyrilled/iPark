@@ -1,4 +1,4 @@
-CR002 Réunion iPark pour le Centre hospitalier universitaire Grenoble-Alpes
+CR002 Réunion iPark pour le CHUGA
 ==========================================================
 
 :Date: 02-17 15h-18h
@@ -13,10 +13,10 @@ CR002 Réunion iPark pour le Centre hospitalier universitaire Grenoble-Alpes
 .. attention::
     Ce compte rendu est un *document de travail* et n'est pas contractuel.
 
-Nouvel intervenant, directeur des services généraux du Centre hospitalier universitaire Grenoble-Alpes
+Nouvel intervenant, directeur des services généraux du CHUGA
 - Eliezer LAEMMEL (ELL)
 
-#. Grâce aux contacts d'AGO, une rencontre sur le projet du Centre hospitalier universitaire Grenoble-Alpes (CHUGA)a été organisée opportunément.
+#. Grâce aux contacts d'AGO, une rencontre sur le projet du CHUGA (Centre hospitalier universitaire Grenoble-Alpes) a été organisée opportunément.
 #. Le CHUGA désire s’équiper d'un nouveau système de contrôle d'accès de son parking de l'hôpital Michallon à l'occasion de sa rénovation énérgétique.
 #. Il comprend à la fois des parties accessibles au personnel et d'autres au public en accès payant.
 #. Il s'agit donc d'un prospect chaud pour iPark.
