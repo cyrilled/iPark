@@ -87,7 +87,7 @@ Nouvelles parties prenantes :
 
         Fig. 3 - Justificatif de paiement par carte bancaire
 
-#. Pour iPark, la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 3 secondes.
+#. Pour iPark, la vérification du paiement ou des autorisations après le lecture de plaque devra toujours être faite en moins de 10 secondes.
 #. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 400 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
 
 #. Tous les matériels doivent être reliés au serveur de contrôle du site via des câbles RJ12 et utiliser le protocole "RFC 873"
