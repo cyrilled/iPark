@@ -47,7 +47,7 @@ Nouvelles parties prenantes :
     .. figure:: media/zg-le.jpg
         :align: center
 
-        Fig. 1 : *"borne ZEAG-LE"* par HubParking
+        Fig. 1 - *"borne ZEAG-LE"* par HubParking
 
 #. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
@@ -57,7 +57,7 @@ Nouvelles parties prenantes :
     .. figure:: media/TicketQRCode.png
         :align: center
 
-        Fig. 2 : *"ticket Michallon 2023"*
+        Fig. 2 - Ticket Michallon 2023
 
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
 #. Les bornes possèdent un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
@@ -84,7 +84,7 @@ Nouvelles parties prenantes :
     .. figure:: media/JustificatifPaiementCB.png
         :align: center
 
-        Fig. 3 : *"justificatif de paiement par carte bancaire"*
+        Fig. 3 - Justificatif de paiement par carte bancaire
 
 #. Pour iPark, la vérification du paiement ou des autorisations lors d'un passage de carte ou de badge devra toujours être faite en moins de 3 secondes.
 #. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 400 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
