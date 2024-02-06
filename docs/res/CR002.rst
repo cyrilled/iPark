@@ -56,7 +56,7 @@ Nouvel intervenant, directeur des services généraux du CHUGA
 #. Les personnels les médecins de nuit des urgences ont eux aussi besoin d'un accès de 20h à 6h et ont accès au parking du niveau 5.
 #. Les personnels des RH centraux n'ont accès qu'aux horaires de bureau au parking du niveau 4.
 #. On pourra imaginer d'utiliser dans le futur des périodes d'accès standardisés pour les ré-utiliser avec plusieurs groupes.
-#. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes parking (cf. CR003-Fig1_ et CR003-Fig2_).
+#. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes zones de parking (cf. CR003-Fig1_ et CR003-Fig2_).
 #. Une autorisation définit ainsi la zone auquel un groupe peut accéder sur une période.
 #. Par exemple, en reprenant l'exemple donné par ELL du 7 décembre, on doit pouvoir définir deux autorisations comme présenté dans le tableau ci-dessous.
 
