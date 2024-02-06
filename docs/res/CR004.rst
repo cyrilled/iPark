@@ -22,7 +22,7 @@ CR004 Architecture et contraintes techniques
 #. De tels clients devront pouvoir être gérés avec iPark.
 
 #. Contrairement aux architectures traditionnelles, il n’y aura pas de poste fixe pour les gardiens.
-#. Les gardiens seront équipés de tablettes sous Chrome pour gérer les incidents.
+#. Les gardiens seront équipés de tablettes sous Android pour gérer les incidents.
 #. C'est un grand changement car jusque-là des appareils spécialisés ou des postes fixes étaient utilisés.
 #. Les applis des tablettes des gardiens seront connectées au serveur applicatif via une connexion sécurisée https et un réseau wifi interne sécurisé.
 #. AccessIT mentionne qu'il est possible d'installer des systèmes de brouillage et bien d'autres choses, qui rendent ce réseau à la fois sûr et fiable.
