@@ -52,7 +52,8 @@ Nouvelles parties prenantes :
 #. La borne "ZEAG-LE" n'est là qu'à titre d'illustration ; les bornes Z-Park ont de nombreuses différences.
 #. Le matériel est extrêmement performant (à condition que les contrôles logiciels suivent).
 #. La borne peut émettre (en entrée) et lire (en sortie) des tickets de stationnement utilisant des QR codes qui ressemblent *par certains aspects* à celui de la figure 2 ci-dessous
- .. _CR004Fig2:
+
+    .. _CR004Fig2:
 
     .. figure:: media/TicketQRCode.png
         :align: center
@@ -79,7 +80,7 @@ Nouvelles parties prenantes :
 
 #. Ce justificatif CB est similaire à celui de la figure 3 ci-dessous
 
- .. _CR004Fig3:
+    .. _CR004Fig3:
 
     .. figure:: media/JustificatifPaiementCB.png
         :align: center
