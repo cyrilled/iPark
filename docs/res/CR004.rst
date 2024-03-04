@@ -37,10 +37,10 @@ CR004 Architecture et contraintes techniques
 #. La discussion sur le rôle des gardiens s'est achevée sur la conclusion suivante.
 #. L'ergonomie de l'IHM des gardiens doit être optimale vu le turn-over dans cette profession et la nécessité d'agir rapidemment.
 #. _
-#. Le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes administrateurs (autant que nécessaire) seront connectés au serveur applicatif par une liaison Ethernet, avec unun interface WEB utilisant le protocole https.
+#. Le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes administrateurs (autant que nécessaire) seront connectés au serveur applicatif par une liaison Ethernet, avec une interface WEB utilisant le protocole https.
 #. Il s'agit dans les deux cas de PCs sous Windows.
 #. _
-#. Les administrateurs gèrent les personnels et leurs inscriptions à des groupes, mais pas aussi leurs changements de véhicule.
+#. Les administrateurs gèrent les personnels et leurs inscriptions à des groupes, mais aussi leurs changements de véhicule.
 #. Lorsqu'un personnel change de véhicule; il doit donner à son administrateur la nouvelle plaque d'immatriculation, faute de quoi ce véhicule n'accédera pas au parking.
 
 #. Lorsqu'un personnel appartient à plusieurs groupes, et si ces groupes sont gérés par différents administrateurs, n'importe quel de ces administrateurs peut mettre à jour son véhicule.
