@@ -61,7 +61,7 @@ Nouvelles parties prenantes :
         Fig. 2 - Ticket Michallon 2023
 
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
-#. Les bornes possèdent un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
+#. Les bornes possèdent un afficheur de texte et un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
 #. Ce bouton met en marche le micro et les haut-parleurs de la borne pour la communication avec les gardiens ainsi que l'affichage de la vidéo.
 
 #. Les capteurs de passage s'installent sous la chaussée. Il sont capables, sur commande, de détecter le passage d'un véhicule (voiture ou moto)
@@ -75,7 +75,7 @@ Nouvelles parties prenantes :
 #. Chaque matériel est connecté au panneau de brassage du serveur de contrôle par une connexion RFC 813
 #. Une fois de plus Z-Park propose le matériel pour gérer les accès, mais leurs fonctions devront être commandées depuis le serveur de contrôle via les drivers fournis.
 
-#. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. L'utilisateur introduit son ticket, passe sa carte bancaire dans le lecteur (ou avec un passage sans contact) et obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
+#. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. La borne affiche le montant à payer et demander au conducteur d'introduire son ticket, puis de passer sa carte bancaire dans le lecteur de CB (ou avec un passage sans contact). Le conducteur obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
 
 #. Ce justificatif CB est similaire à celui de la figure 3 ci-dessous
 
