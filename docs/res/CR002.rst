@@ -44,7 +44,7 @@ Nouvel intervenant, directeur des services généraux du CHUGA
 #. On estime qu'il y aura environ 40 groupes pour les 9 7000 employés du CHUGA.
 #. Même si différents groupes de personnels ont été identifiés, d'autres pourraient apparaître.
 #. Chaque personnel devra donner la numéro de plaque d'immatriculation de son véhicule pour avoir accès au parking. iPark enregistrera aussi leurs nom, prénoms, statut ainsi que leur service.
-#. Un superviseur unique par parking peut créer des administrateurs pour ces groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
+#. Un superviseur unique par parking peut créer des administrateurs pour gérer des groupes. Il leur donne des droits sur la gestion d'un ou plusieurs niveaux de parking.
 #. Chaque groupe d'un parking sera alors créé et géré par un administrateur et pas par le superviseur.
 #. Par exemple l'administrateur des personnels des urgences peut ajouter un personnel infirmier dans iPark en donnant son numéro de plaque, l'ajouter au groupe "Infirmer Urgence Nuit". et définir les niveaux auxquelles le groupe "Infirmer Urgence Nuit" a accès et à quels moments.
 #. Un autre administrateur s'occupe des personnels de restauration du CHUGA, etc.
