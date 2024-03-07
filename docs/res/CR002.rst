@@ -52,9 +52,9 @@ Nouvel intervenant, directeur des services généraux du CHUGA
 #. Le nombre de personnels par groupe va de 1 à 100 environ.
 
 #. Les autorisations d'un groupe définissent les niveaux auxquels ses membres ont accès et à quelles périodes.
-#. Par exemple les infirmiers de nuit des urgences ont besoin d'un accès de 20h à 6h et ont accès au parking du niveau 6.
-#. Les personnels les médecins de nuit des urgences ont eux aussi besoin d'un accès de 20h à 6h et ont accès au parking du niveau 5.
-#. Les personnels des RH centraux n'ont accès qu'aux horaires de bureau au parking du niveau 4.
+#. Par exemple les infirmiers de nuit des urgences ont besoin d'un accès de 20h à 6h et ont accès au parking du niveau 6, tous les jours de la semaine.
+#. Les personnels les médecins de nuit des urgences ont eux aussi besoin d'un accès de 20h à 6h et ont accès au parking du niveau 5, tous les jours de la semaine.
+#. Les personnels des RH centraux n'ont accès qu'aux horaires de bureau au parking du niveau 4, du lundi au vendredi.
 #. On pourra imaginer d'utiliser dans le futur des périodes d'accès standardisés pour les ré-utiliser avec plusieurs groupes.
 #. Dans tous les cas pour une période un groupe peut accéder toujours aux mêmes zones de parking (cf. CR003-Fig1_ et CR003-Fig2_).
 #. Une autorisation définit ainsi la zone auquel un groupe peut accéder sur une période.
