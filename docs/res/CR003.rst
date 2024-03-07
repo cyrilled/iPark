@@ -75,7 +75,7 @@ Nouvelles parties prenantes :
 #. Chaque matériel est connecté au panneau de brassage du serveur de contrôle par une connexion RFC 813
 #. Une fois de plus Z-Park propose le matériel pour gérer les accès, mais leurs fonctions devront être commandées depuis le serveur de contrôle via les drivers fournis.
 
-#. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. La borne affiche le montant à payer et demander au conducteur d'introduire son ticket, puis de passer sa carte bancaire dans le lecteur de CB (ou avec un passage sans contact). Le conducteur obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
+#. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. La borne affiche le montant à payer et demande au conducteur d'introduire son ticket, puis de passer sa carte bancaire dans le lecteur de CB (ou avec un passage sans contact). Le conducteur obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
 
 #. Ce justificatif CB est similaire à celui de la figure 3 ci-dessous
 
