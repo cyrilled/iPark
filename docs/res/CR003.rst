@@ -81,7 +81,7 @@ Nouvelles parties prenantes :
 
     .. _CR004Fig3:
 
-    .. figure:: media/JustificatifPaiementCB.png
+    .. figure:: media/JustificatifPaiementCB.jpg
         :align: center
 
         Fig. 3 - Justificatif de paiement par carte bancaire
