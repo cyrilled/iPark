@@ -55,7 +55,7 @@ Nouvelles parties prenantes :
 
     .. _CR004Fig2:
 
-    .. figure:: media/TicketQRCode.png
+    .. figure:: media/TicketQRCode.jpg
         :align: center
 
         Fig. 2 - Ticket Michallon 2023
