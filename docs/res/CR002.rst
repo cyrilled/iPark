@@ -79,7 +79,7 @@ Nouvel intervenant, directeur des services généraux du CHUGA
 #. Le véhicule est alors bloqué dans la zone et doit attendre qu'un gardien le débloque.
 #. L'appli iPark de la tablette du gardien le met en contact audio avec le conducteur du véhicule et lui affiche la caméra associée à la borne d'accès concernée.
 #. Le gardien peut alors, suivant les cas, émettre un ticket d'entrée sur la borne, enregistrer l'accès ou la sortie d'un personnel, lever ou baisser une barrière.  
-#. Par exemple, en cas de plaque d'immatriculation non reconnue en entrée d'une zone d'accès restreint, après avoir discuté de la raison du problème, le gardien pourra laisser entrer le conducteur et enregistrer son entrée.
+#. Par exemple, en cas de plaque d'immatriculation non reconnue en entrée d'une zone d'accès restreint, après avoir discuté de la raison du problème, le gardien pourra laisser entrer le conducteur et enregistrer son entrée; ou en cas de ticket perdu à la sortie, générer un ticket forfaitaire sur la borne.
 #. Un élément important concerne les règles à appliquer en cas d'incendie dans une zone.
 #. Les barrières des points de sortie doivent être ouvertes automatiquement.
 #. Il faut donc prendre en compte les systèmes à incendie et les interfacer avec iPark.
