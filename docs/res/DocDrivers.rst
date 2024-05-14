@@ -14,8 +14,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. #########
 #. **Tous les matériels**
 #. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
-#. 	-- port : le numéro du port de connexion au panneau de brassage du matériel
-#. 	-- refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
+#. port : le numéro du port de connexion au panneau de brassage du matériel
+#. refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
 #. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
 #. Des opérations sont spécifiques à chaque type de matériel
 #. #########
