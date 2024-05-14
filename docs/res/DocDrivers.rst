@@ -44,6 +44,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. L'objet de contrôle est un contrôleur de passage, de classe ``ControleurEntree`` ou ``ControleurSortie``, selon le cas.
 #. Il n'y pas dans ce cas un objet d'IHM mais plusieurs, car le point de passage n'a pas d'existence propre mais est composé de matériels d'accès (barrière(s), borne à tickets, ...). C'est l'ensemble des drivers de ces matériels d'accès qui constituent l'objet d'IHM, comme présenté dans le diagramme de classes de la figure 1 pour le cas de points de sortie payants.
 
+  .. _CR002-Fig1:
   .. figure:: media/classesDrivers.jpg
         :align: center
 
