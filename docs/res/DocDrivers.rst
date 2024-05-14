@@ -8,16 +8,17 @@ Annexe - Documentation technique
 
 Ce document présente l'installation et le fonctionnement des drivers et contrôleurs de matériels de contrôle d'accès pour un point de passage
 
-#. #########
-#. **DRIVERS DES MATERIELS de CONTROLE D'ACCES**
+#. **DRIVERS DES MATERIELS DE CONTROLE D’ACCES**
 #. #########
 #. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
+#. #########
 #. **Tous les matériels**
 #. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
-#. - port : le numéro du port de connexion au panneau de brassage du matériel
-#. - refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
+#. --- port : le numéro du port de connexion au panneau de brassage du matériel
+#. --- refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
 #. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
 #. Des opérations sont spécifiques à chaque type de matériel
+#. #########
 #. **Borne à ticket**
 #. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
 #. -- imprimerTicketForfaitaire(). Imprime et sort un ticket de parking forfaitaire.
@@ -32,8 +33,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- détecter(t temps) : chaîne. Détecte le passage d'un un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK sinon.
 #. **Caméra de surveillance**
 #. -- lancer() : chaîne. Lance la diffusion de la caméra. Renvoie un lien vers le flux vidéo si la caméra fonctionne, KO sinon.
-
 #. #########
+
 #. **ARCHITECTURE ET PRINCIPE DE FONCTIONNEMENT**
 #. #########
 #. Le système suit le patron ECB (Entity-Control-Boundary, Métier-Contrôle-IHM en français)
@@ -41,10 +42,10 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. Ainsi pour un point de passage (entrée ou sortie) le système utilise trois objets : un objet métier (Entity), un objet de contrôle (Control) et un objet d'IHM (Boundary).
 #. l'objet métier appartient à la classe PointEntree ou PointSortie selon le cas. Il est persistant sur le serveur applicatif.
 #. L'objet de contrôle est un contrôleur de passage, de classe ControleurEntree ou ControleurSortie, selon le cas.
-#. Il n'y pas dans ce cas un objet d'IHM mais plusieurs, car le point de passage n'a pas d'existence propre mais est composé de matériels d'accès (barrière(s), borne à tickets, ...). C'est l'ensemble des drivers de ces matériels d'accès qui constituent l'objet d'IHM, comme présenté dans le diagramme de classes de la figure 1.
+#. Il n'y pas dans ce cas un objet d'IHM mais plusieurs, car le point de passage n'a pas d'existence propre mais est composé de matériels d'accès (barrière(s), borne à tickets, ...). C'est l'ensemble des drivers de ces matériels d'accès qui constituent l'objet d'IHM, comme présenté dans le diagramme de classes de la figure 1 pour le cas de points de sortie payants.
 
  .. _DocDrivers-Fig1:
-    .. figure:: media/classes drivers.png
+    .. figure:: media/classes drivers.jpg
         :align: center
 
         Fig. 1 : Diagramme de classe des drivers de matériels et des points de passage 
