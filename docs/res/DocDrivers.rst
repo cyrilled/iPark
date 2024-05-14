@@ -10,9 +10,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 
 #. **DRIVERS DES MATERIELS DE CONTROLE D’ACCES**
 #. #########
-#. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
-#. #########
-
+#. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes par type de matériel
 #. **Borne à ticket**
 #. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
 #. -- imprimerTicketForfaitaire(). Imprime et sort un ticket de parking forfaitaire.
@@ -43,7 +41,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. L'objet de contrôle est un contrôleur de passage, de classe ControleurEntree ou ControleurSortie, selon le cas.
 #. Il n'y pas dans ce cas un objet d'IHM mais plusieurs, car le point de passage n'a pas d'existence propre mais est composé de matériels d'accès (barrière(s), borne à tickets, ...). C'est l'ensemble des drivers de ces matériels d'accès qui constituent l'objet d'IHM, comme présenté dans le diagramme de classes de la figure 1 pour le cas de points de sortie payants.
 
- .. _DocDrivers-Fig1:
+    .. _DocDrivers-Fig1:
     .. figure:: media/classesDrivers.jpg
         :align: center
         Fig. 1 : Diagramme de classe des drivers de matériels et des points de passage 
