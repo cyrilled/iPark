@@ -45,9 +45,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. Il n'y pas dans ce cas un objet d'IHM mais plusieurs, car le point de passage n'a pas d'existence propre mais est composé de matériels d'accès (barrière(s), borne à tickets, ...). C'est l'ensemble des drivers de ces matériels d'accès qui constituent l'objet d'IHM, comme présenté dans le diagramme de classes de la figure 1 pour le cas de points de sortie payants.
 
  .. _DocDrivers-Fig1:
-    .. figure:: media/classes drivers.jpg
+    .. figure:: media/classesDrivers.jpg
         :align: center
-
         Fig. 1 : Diagramme de classe des drivers de matériels et des points de passage 
 
 #. **INSTALLATION DES MATERIELS POUR UN POINT DE PASSAGE**
