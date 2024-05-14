@@ -17,8 +17,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. port : le numéro du port de connexion au panneau de brassage du matériel
 #. refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
 #. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
-#. Des opérations sont spécifiques à chaque type de matériel
 #. #########
+#. Des opérations sont spécifiques à chaque type de matériel
 #. **Borne à ticket**
 #. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
 #. -- imprimerTicketForfaitaire(). Imprime et sort un ticket de parking forfaitaire.
@@ -50,7 +50,6 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 
         Fig. 1 : Diagramme de classe des drivers de matériels et des points de passage 
 
-#. ######
 #. **INSTALLATION DES MATERIELS POUR UN POINT DE PASSAGE**
 #. ######
 #. L'installation d'un point de passage crée une instance de point de passage (dans la classe PointEntree ou PointSortie selon le cas) et une instance de contrôleur de point de passage en les liant entre elles (voir diagramme de classe).
@@ -60,10 +59,10 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- une instance du driver de matériel est créée sur le serveur de contrôle, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage et l'oid du contrôleur de point de passage qui va le commander par la suite.
 #. -- la Liaison inverse est créée (du contrôleur de point de passage au matériel) 
 #. -- Pour finir selon les cas
-#. - le driver d'un borne à tickets d'un point d'entrée ou de sortie du personnel se met en attente d'un appel audio 
-#. - le driver d'un borne à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
-#. - le driver d'un borne à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
-#. - le driver des lecteurs de plaques lancent la détection de plaque
+#. le driver d'un borne à tickets d'un point d'entrée ou de sortie du personnel se met en attente d'un appel audio 
+#. le driver d'un borne à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
+#. le driver d'un borne à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
+#. le driver des lecteurs de plaques lance la détection de plaque
 
 #. ######
 #. **FONCTIONNEMENT EN CONTINU**
