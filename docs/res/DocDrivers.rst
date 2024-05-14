@@ -12,7 +12,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. #########
 #. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. **Borne à ticket**
-#. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
+#. -- ``imprimerTicket(z chaîne, n entier)``. Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
 #. -- imprimerTicketForfaitaire(). Imprime et sort un ticket de parking forfaitaire.
 #. -- imprimerReçuCB(). Imprime et sort un reçu de carte bancaire.
 #. -- affichertexte(m message). Affiche le message textuel sur l'afficheur.
