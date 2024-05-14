@@ -11,14 +11,6 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. **DRIVERS DES MATERIELS DE CONTROLE D’ACCES**
 #. #########
 #. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
-#. #########
-#. **Tous les matériels**
-#. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
-#.   \- port : le numéro du port de connexion au panneau de brassage du matériel
-#.   \- refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
-#. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
-#. #########
-#. Des opérations sont spécifiques à chaque type de matériel
 #. **Borne à ticket**
 #. -- imprimerTicket(z chaîne, n entier). Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
 #. -- imprimerTicketForfaitaire(). Imprime et sort un ticket de parking forfaitaire.
@@ -33,6 +25,14 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- détecter(t temps) : chaîne. Détecte le passage d'un un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK sinon.
 #. **Caméra de surveillance**
 #. -- lancer() : chaîne. Lance la diffusion de la caméra. Renvoie un lien vers le flux vidéo si la caméra fonctionne, KO sinon.
+#. #########
+#. **Tous les matériels**
+#. -- DriverMatériel(port entier, refContrôleur Contrôleur). Crée et lance une instance du driver avec
+#.   \- port : le numéro du port de connexion au panneau de brassage du matériel
+#.   \- refContrôleur la référence (un oid) du contrôleur de matériel qui va le commander
+#. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple DriverBarrière(port entier, refContrôleur Contrôleur) pour les barrières.
+#. #########
+#. Des opérations sont spécifiques à chaque type de matériel
 #. #########
 
 #. **ARCHITECTURE ET PRINCIPE DE FONCTIONNEMENT**
