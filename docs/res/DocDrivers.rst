@@ -9,7 +9,6 @@ Annexe - Documentation technique
 Ce document présente l'installation et le fonctionnement des drivers et contrôleurs de matériels de contrôle d'accès pour un point de passage
 
 #. **DRIVERS DES MATERIELS DE CONTROLE D’ACCES**
-#. #########
 #. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. **Borne à ticket**
 #. -- ``imprimerTicket(z chaîne, n entier)``. Imprime et sort un ticket de parking de numéro n indiquant une entrée dans la zone z à l'heure et la date courante.
@@ -32,11 +31,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #.   \- ``refContrôleur`` : la référence (un oid) du contrôleur de matériel qui va le commander
 #. Ce constructeur générique a des sous-opérations pour chacun des types de matériels, par exemple ``DriverBarrière(port entier, refContrôleur Contrôleur)`` pour les barrières.
 #. #########
-#. Des opérations sont spécifiques à chaque type de matériel
-#. #########
 
 #. **ARCHITECTURE ET PRINCIPE DE FONCTIONNEMENT**
-#. #########
 #. Le système suit le patron ECB (Entity-Control-Boundary, Métier-Contrôle-IHM en français)
 #. Selon ce patron, l'objet d'IHM et l'objet de contrôle se connaissent mutuellement, l'objet domaine et l'objet de contrôle se connaissent mutuellement, mais l'objet d'IHM et l'objet métier ne se connaissent pas et ne communiquent pas entre eux.
 #. Ainsi pour un point de passage (entrée ou sortie) le système utilise trois objets : un objet métier (Entity), un objet de contrôle (Control) et un objet d'IHM (Boundary).
@@ -50,7 +46,6 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
         Fig. 1 : Diagramme de classe des drivers de matériels et des points de passage 
 
 #. **INSTALLATION DES MATERIELS POUR UN POINT DE PASSAGE**
-#. ######
 #. L'installation d'un point de passage crée une instance de point de passage (dans la classe ``PointEntree`` ou ``PointSortie`` selon le cas) et une instance de contrôleur de point de passage en les liant entre elles (voir diagramme de classe).
 #. Ensuite, pour chaque matériel du point de passage
 #. -- le matériel est connecté physiquement au panneau de brassage du serveur de contrôle
