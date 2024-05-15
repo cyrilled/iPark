@@ -58,7 +58,7 @@ Nouvelles parties prenantes :
 
     .. figure:: media/tickets.jpeg
         :align: center
-	:scale: 25%
+	:scale: 10%
 
         Fig. 2 - Tickets Michallon 2024
 
