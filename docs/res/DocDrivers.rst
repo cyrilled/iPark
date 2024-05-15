@@ -60,8 +60,6 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. ######
 
 #. **FONCTIONNEMENT EN CONTINU**
-#. ######
-
 #. **Lecteur de plaque**
 #. A la lecture d'une plaque, le driver de lecteur de plaque appelle l'opération ``controlerEntrée(numero entier)`` (ou ``controlerSortie`` selon le cas) de son contrôleur de point d'entrée (ou de sortie selon le cas) où ``numero`` est le numéro d'immatriculation lu. Cette opération gère l’entrée (ou la sortie selon le cas) par ce point de passage.
 
