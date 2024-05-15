@@ -55,10 +55,10 @@ Nouvelles parties prenantes :
 
     .. _CR004Fig2:
 
-    .. figure:: media/TicketQRCode.jpg
+    .. figure:: media/tickets.jpg
         :align: center
 
-        Fig. 2 - Ticket Michallon 2023
+        Fig. 2 - Tickets Michallon 2024
 
 #. Les tickets sont émis en touchant un bouton d'émission de ticket.
 #. Les bornes possèdent un afficheur de texte et un bouton d'appel pour les conducteurs bloqués en sortie ou dont l'accès est refusé en entrée.
@@ -77,14 +77,7 @@ Nouvelles parties prenantes :
 
 #. Le paiement dans les zones publiques s'effectue sur les bornes de sortie. Le conducteur introduit son ticket. La borne affiche le montant à payer et demande au conducteur de passer sa carte bancaire dans le lecteur de CB (ou avec un passage sans contact). Le conducteur obtient en retour son ticket après impression du montant du parking et de la date de sortie pour servir de facture et un justificatif de paiement CB.
 
-#. Ce justificatif CB est similaire à celui de la figure 3 ci-dessous
-
-    .. _CR004Fig3:
-
-    .. figure:: media/JustificatifPaiementCB.jpg
-        :align: center
-
-        Fig. 3 - Justificatif de paiement par carte bancaire
+#. Ce justificatif CB est similaire à celui de la figure 2 (voir plus haut)
 
 #. Pour iPark, la vérification du paiement ou des autorisations après le lecture de plaque devra toujours être faite en moins de 10 secondes.
 #. Sachant que l'on envisage d'utiliser ces matériels dans des parking avec des heures de pointes à plus de 400 entrées ou sorties par heure, un soin tout particulier devra être apporté à cet aspect.
