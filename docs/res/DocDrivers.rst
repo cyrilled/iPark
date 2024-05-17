@@ -68,7 +68,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. A la demande de ticket, le driver de borne à tickets appelle l’opération ``controlerEntrée()`` de son contrôleur de point d'entrée qui va gérer l’entrée par ce point d’accès.
 
 #. **Borne à tickets de sortie payante**
-#. A la demande de ticket, le driver de borne à tickets appelle l’opération ``controlerSortie()`` de son contrôleur de point d'entrée qui va gérer la sortie par ce point d’accès.
+#. A la lecture d'un ticket, le driver de borne à tickets appelle l’opération ``controlerSortie()`` de son contrôleur de point d'entrée qui va gérer la sortie par ce point d’accès.
 #. **Toutes les borne à tickets**
 #. A l'appui sur le bouton d'appel audio, le driver de borne appelle l'opération ``appelAudio()`` de son contrôleur de passage qui va gérer l'appel audio depuis ce point de passage.
 
