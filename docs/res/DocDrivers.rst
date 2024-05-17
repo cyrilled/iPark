@@ -21,7 +21,8 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- ``lever() : chaîne``. Lève la barrière. Renvoie KO en cas d'échec (impossible de lever la barrière), OK sinon.
 #. -- ``baisser() : chaîne``. Baisse la barrière. Renvoie KO en cas d'échec (impossible de baisser la barrière), OK sinon
 #. **Capteur de passage**
-#. -- ``détecter(t temps) : chaîne``. Détecte le passage d'un un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK sinon.
+#. -- ``détecter(t temps) : chaîne``. Détecte le passage d'un véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si aucun véhicule n'a été détecté dans l'intervalle de temps; OK dès qu'un véhicule est présent.
+#. -- ``détecterAbsence(t temps) : chaîne``. Détecte l'absence de véhicule entre le lancement de l'opération et le temps t (en secondes). Renvoie KO si un véhicule est détecté au bout de l'intervalle de temps; OK dès qu'un véhicule est absent.
 #. **Caméra de surveillance**
 #. -- ``lancer() : chaîne``. Lance la diffusion de la caméra. Renvoie un lien vers le flux vidéo si la caméra fonctionne, KO sinon.
 #. #########
