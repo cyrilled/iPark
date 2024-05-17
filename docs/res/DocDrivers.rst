@@ -11,9 +11,9 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. **DRIVERS DES MATERIELS DE CONTROLE D’ACCES**
 #. Les matériels de contrôle d'accès sont fournis par Z-Park avec des drivers dont l'API est composée des opérations essentielles suivantes
 #. **Borne à ticket**
-#. -- ``imprimerTicket(z chaîne, dh dateheure)``. Imprime et sort un ticket de parking indiquant une entrée dans la zone z à l'heure et la date courante dh.
+#. -- ``imprimerTicket(qr entier, z chaîne, dh dateheure)``. Imprime et sort un ticket de parking de qrCode correspondant au nombre qr, indiquant une entrée dans la zone z à l'heure et la date courante dh.
 #. -- ``imprimerTicketSortie(dh dateheure)``. Imprime sur le ticket entré (et le sort)à l'heure et la date courante dh.
-#. -- ``imprimerTicketForfaitaire()``. Imprime et sort un ticket de parking forfaitaire.
+#. -- ``imprimerTicketForfaitaire(qr entier)``. Imprime et sort un ticket de parking forfaitaire de qrCode correspondant au nombre qr.
 #. -- ``imprimerReçuCB()``. Imprime et sort un reçu de carte bancaire.
 #. -- ``affichertexte(m message)``. Affiche le message textuel sur l'afficheur.
 #. -- ``diffuserAudio(m message)``. Diffuse le message audio m sur les hauts-parleurs.
@@ -69,7 +69,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. A la demande de ticket, le driver de borne à tickets appelle l’opération ``controlerEntrée()`` de son contrôleur de point d'entrée qui va gérer l’entrée par ce point d’accès.
 
 #. **Borne à tickets de sortie payante**
-#. A la lecture d'un ticket, le driver de borne à tickets appelle l’opération ``controlerSortie()`` de son contrôleur de point d'entrée qui va gérer la sortie par ce point d’accès.
+#. A la lecture d'un ticket, le driver de borne à tickets appelle l’opération ``controlerSortie(qr entier)`` (où qr est le QR code du ticket) de son contrôleur de point d'entrée qui va gérer la sortie par ce point d’accès.
 #. **Toutes les borne à tickets**
 #. A l'appui sur le bouton d'appel audio, le driver de borne appelle l'opération ``appelAudio()`` de son contrôleur de passage qui va gérer l'appel audio depuis ce point de passage.
 
