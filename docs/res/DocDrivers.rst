@@ -14,7 +14,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- ``imprimerTicket(qr entier, z chaîne, dh dateheure)``. Imprime et sort un ticket de parking de qrCode correspondant au nombre qr, indiquant une entrée dans la zone z à l'heure et la date courante dh.
 #. -- ``imprimerTicketSortie(p entier, dh dateheure)``. Imprime sur le ticket entré (et le sort) son prix p et l'heure et la date de sortie dh.
 #. -- ``imprimerTicketForfaitaire(qr entier)``. Imprime et sort un ticket de parking forfaitaire de qrCode correspondant au nombre qr.
-#. -- ``imprimerReçuCB(m entier, d date/heure, nbCB entier)``. Imprime et sort un reçu de carte bancaire de m euros à la date/heure d pour la carte bancaire no	 nbCB.
+#. -- ``imprimerReçuCB(m entier, d date/heure, noCB entier)``. Imprime et sort un reçu de carte bancaire de m euros à la date/heure d pour la carte bancaire noCB.
 #. -- ``affichertexte(m message)``. Affiche le message textuel sur l'afficheur.
 #. -- ``diffuserAudio(m message)``. Diffuse le message audio m sur les hauts-parleurs.
 #. -- ``ouvrirMicro()``. Ouvre le micro.
