@@ -69,12 +69,9 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. A la demande de ticket, le driver de borne à tickets appelle l’opération ``controlerEntrée()`` de son contrôleur de point d'entrée qui va gérer l’entrée par ce point d’accès.
 
 #. **Borne à tickets de sortie payante**
-#. A la lecture d'un ticket, le driver de borne à tickets appelle l’opération ``controlerSortie(qr entier)`` (où qr est le QR code du ticket) de son contrôleur de point d'entrée qui va gérer la sortie par ce point d’accès.
+#. A la lecture d'un ticket, le driver de borne à tickets appelle l’opération ``controlerSortie(qr entier)`` (où qr est le QR code du ticket) de son contrôleur de point de sortie qui va gérer la sortie par ce point d’accès.
 #. **Toutes les borne à tickets**
 #. A l'appui sur le bouton d'appel audio, le driver de borne appelle l'opération ``appelAudio()`` de son contrôleur de passage qui va gérer l'appel audio depuis ce point de passage.
 
 #. **Borne à tickets d'entrée ou de sortie par badge**
 #. A la lecture d'un badge, le driver d'une borne à tickets appelle l'opération ``controlerEntrée(code entier)`` (ou ``controlerSortie`` selon le cas) de son contrôleur d'entrée (ou de sortie selon le cas) où code est le numéro du badge lu. Cette opération gère l’entrée (ou la sortie selon le cas) par ce point de passage.
-
-#. **Borne de paiement**
-#. A la lecture d'un ticket, le driver de borne de paiement d'entrée appelle l'opération ``contrôlerPaiement(noTicket entier)`` de son contrôleur de matériel où ``noTicket`` est le numéro du ticket de stationnement lu. La méthode de cette opération va gérer le paiement par cette borne point d'accès.
