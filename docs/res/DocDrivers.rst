@@ -63,7 +63,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 
 #. **FONCTIONNEMENT EN CONTINU**
 #. **Lecteur de plaque**
-#. A la lecture d'une plaque, le driver de lecteur de plaque appelle l'opération ``controlerEntrée(numero entier)`` (ou ``controlerSortie`` selon le cas) de son contrôleur de point d'entrée (ou de sortie selon le cas) où ``numero`` est le numéro d'immatriculation lu. Cette opération gère l’entrée (ou la sortie selon le cas) par ce point de passage.
+#. A la lecture d'une plaque, le driver de lecteur de plaque appelle l'opération ``controlerEntrée(numero chaîne)`` (ou ``controlerSortie`` selon le cas) de son contrôleur de point d'entrée (ou de sortie selon le cas) où ``numero`` est le numéro d'immatriculation lu. Cette opération gère l’entrée (ou la sortie selon le cas) par ce point de passage.
 
 #. **Borne à tickets d'entrée payante**
 #. A la demande de ticket, le driver de borne à tickets appelle l’opération ``controlerEntrée()`` de son contrôleur de point d'entrée qui va gérer l’entrée par ce point d’accès.
