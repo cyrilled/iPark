@@ -31,11 +31,11 @@ CR004 Architecture et contraintes techniques
 #. En fonction de sa disponibilité, le gardien choisit de prendre en charge un incident qui lui est notifé ou de le laisser aux autres gardiens.
 #. Lorsqu'un gardien prend un incident, celui change d'état (de "nouveau" à "affecté"). 
 #. À partir de ce moment c'est lui qui contrôle totalement le point d'accès concerné jusqu'à ce qu'il déclare l'incident clos.
-#. Pour régler l'incident le gardien agit sur les équipement du point d'accès depuis sa tablette.
+#. Pour régler l'incident le gardien agit sur les équipements du point d'accès depuis sa tablette.
 #. Il peut éventuellement commenter un incident une fois qu'il l'a clos, avec un texte.
 #. Evidemment si nécessaire les gardiens appelleront les services compétents (urgences, sécurité, police, administration, etc.).
 #. La discussion sur le rôle des gardiens s'est achevée sur la conclusion suivante.
-#. L'ergonomie de l'IHM des gardiens doit être optimale vu le turn-over dans cette profession et la nécessité d'agir rapidemment.
+#. L'ergonomie de l'IHM des gardiens doit être optimale vu le turn-over dans cette profession et la nécessité d'agir rapidement.
 #. _
 #. Le poste superviseur (toujours un seul, pour des raisons de sécurité) et les postes administrateurs (autant que nécessaire) seront connectés au serveur applicatif par une liaison Ethernet, avec une interface WEB utilisant le protocole https.
 #. Il s'agit dans les deux cas de PCs sous Windows.

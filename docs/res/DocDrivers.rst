@@ -16,7 +16,7 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- ``imprimerTicketForfaitaire(qr entier)``. Imprime et sort un ticket de parking forfaitaire de qrCode correspondant au nombre qr.
 #. -- ``imprimerReçuCB(m entier, d date/heure, noCB entier)``. Imprime et sort un reçu de carte bancaire de m euros à la date/heure d pour la carte bancaire noCB.
 #. -- ``affichertexte(m message)``. Affiche le message textuel sur l'afficheur.
-#. -- ``diffuserAudio(m message)``. Diffuse le message audio m sur les hauts-parleurs.
+#. -- ``diffuserAudio(m message)``. Diffuse le message audio m sur les haut-parleurs.
 #. -- ``ouvrirMicro()``. Ouvre le micro.
 #. **Barrière**
 #. -- ``lever() : chaîne``. Lève la barrière. Renvoie KO en cas d'échec (impossible de lever la barrière), OK sinon.
@@ -55,9 +55,9 @@ Ce document présente l'installation et le fonctionnement des drivers et contrô
 #. -- une instance du driver de matériel est créée sur le serveur de contrôle, en lui donnant en paramètre le numéro du port de connexion au panneau de brassage et l'oid du contrôleur de point de passage qui va le commander par la suite.
 #. -- la liaison inverse est créée (du contrôleur de point de passage au matériel) 
 #. -- Pour finir selon les cas
-#.   \- le driver d'un borne à tickets d'un point d'entrée ou de sortie du personnel se met en attente d'un appel audio 
-#.   \- le driver d'un borne à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
-#.   \- le driver d'un borne à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
+#.   \- le driver d'une borne à tickets d'un point d'entrée ou de sortie du personnel se met en attente d'un appel audio 
+#.   \- le driver d'une borne à tickets d'entrée payante se met en attente d'une demande de ticket ou d'un appel audio 
+#.   \- le driver d'une borne à tickets de sortie payante se met en attente d'une introduction de ticket ou d'un appel audio
 #.   \- le driver des lecteurs de plaques lance la détection de plaque
 #. ######
 
